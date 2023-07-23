@@ -7,6 +7,7 @@ import IZNavBar from './components/Header/IZNavBar'
 import Copyright from './components/Footer/Footer'
 import Home from './pages/Home';
 import Service from './pages/Services';
+import DigitalTransform from './pages/Services/DigitalTransform';
 
 function App() {
   const [isSigning] = useState(true);
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/services/software-consulting' element={<Service/>}/>
+        <Route path='/services/software-development' element={<DigitalTransform/>}/>
       </Routes>
       <Copyright/>
       </BrowserRouter>

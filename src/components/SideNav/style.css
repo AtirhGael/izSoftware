@@ -1,0 +1,19 @@
+.content{
+    font-size: x-large;
+    font-weight: 700;
+}
+.content_text{
+    /* font-size: larger; */
+    color: #737373;
+    text-decoration: none;
+    border-left: 1px solid #737373;
+    gap: 2px;
+    padding-left: 14px;
+    padding-top: 3px;
+}
+.sideNav{
+    /* border: 1px solid #737373; */
+    /* border-left: 1px solid #737373;
+    gap: 2px;
+    padding: 14px; */
+}

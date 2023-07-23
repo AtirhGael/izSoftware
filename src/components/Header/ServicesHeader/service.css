@@ -1,11 +1,18 @@
 .icp-header-container{
     background-color: #005eb8;
     width: 100%;
-    padding: 5%;
+    /* padding: 5%; */
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 5%;
     display: flex !important;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+.icp-header{
+    max-width: 45%;
 }
 .icp-title{
     color: #fff;
@@ -56,12 +63,24 @@
     padding-left: 10%;
     padding-right: 10%;
     display: flex;
+    width: 100%;
 }
 .left{
     width: 75%;
 }
 .right{
-    position: relative;
+    box-sizing: border-box!important;
+    direction: inherit;
+    display: block;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    position: sticky;
+    top: 70px;
+    visibility: visible;
+    box-sizing: inherit!important;
+    padding-left: 40px;
+    padding-top: 30px;
 }
 .section-text{
     padding-top: 50px;
@@ -75,7 +94,25 @@
     gap: 20px;
     margin-bottom: 20px;
 }
-@media only screen and (max-width:414px) {
+@media only screen and (max-width:900px) {
+    .main{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .right{
+        position: relative;
+        /* padding-bottom: 10px; */
+        top: -20px;
+    }
+    .icp-header-container{
+        width: 100%;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:433px) {
     .icp-header-container{
         width: 100%;
         padding: 5%;
@@ -89,6 +126,11 @@
 .img{
    height: 600px !important;
     width: 300px;
+}
+.main{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column-reverse;
 }
     
 }

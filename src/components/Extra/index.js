@@ -1,15 +1,22 @@
-import React,{useState} from 'react'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import SouthEastIcon from '@mui/icons-material/SouthEast';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
-import { Button, Stack } from '@mui/material'
+import { Button, Popover, Stack } from '@mui/material'
 import StatsItem from '../../components/StatsItem'
 import './styles.css'
 import { process,partnership } from '../Data/HomeData';
 import ArrowForwardSharpIcon from '@mui/icons-material/ArrowForwardSharp';
+import React, { useState } from 'react';
+import { Backend, Framework, Frontend, database, mobile } from '../Data/serviceMap';
+import {Box} from '@mui/material';
+import PopupState, { bindPopover, bindTrigger } from 'material-ui-popup-state';
+import Stacks from '../carousel/stacks';
+
+
+
 
 export function Extra({bgCollor}) {
   return (
@@ -37,7 +44,7 @@ export function FlexContainer(){
   )
 }
 
-export function SoftwareTypesCard(){
+export function SoftwareTypesCard({text}){
   return(
     <div className='softwareTypeCard'>
       <div className='softwareTypeCard_img'>
@@ -47,6 +54,8 @@ style={{height:'80px',width:'80px'}}
 className='softwareTypeCard_imgg'/>
       </div>
       <div className='softwareTypeCard_title'> Business & project management </div>
+      <div style={{maxWidth:'300px',textAlign:'center'}}> {text}</div>
+
       <div className='softwareTypeCard_text'>
         <ul>
           <li>Project management</li>
@@ -76,13 +85,364 @@ export function SoftwareForAdvancedBusiness(){
     </div>
   )
 }
+// const ReadMore = ({ children }) => {
+//   const text = children;
+//   const [isReadMore, setIsReadMore] = useState(true);
+//   const toggleReadMore = () => {
+//     setIsReadMore(!isReadMore);
+//   };
+//   return (
+//     <p className="text">
+//       {isReadMore ? text.slice(0, 150) : text}
+//       <span onClick={toggleReadMore} className="read-or-hide">
+//         {isReadMore ? "...read more" : " show less"}
+//       </span>
+//     </p>
+//   );
+// };
+// <div className="container">
+//       <h2>
+//         <ReadMore>
+//           GeeksforGeeks: A Computer Science portal for geeks. 
+//           It contains well written, well thought and well explained
+//           computer science, programming articles and quizzes. 
+//           It provides a variety of services for you to learn, so thrive
+//           and also have fun! Free Tutorials, Millions of Articles, Live, 
+//           Online and Classroom Courses ,Frequent Coding Competitions,
+//           Webinars by Industry Experts, Internship opportunities, and Job
+//           Opportunities. Knowledge is power!
+//         </ReadMore>
+//       </h2>
+//     </div>
+
+export function Technologies(){
+  const [isHovered, setIsHovered] = useState(false)
+  return(
+    <div className='capability_section'>
+          <div className='backend'>
+            Backend Programming Languages
+          </div>
+          <div 
+          className='item_of_lanuage'
+         >
+            {Backend.map((item) => (
+              <Box className='item_group'
+                style={{
+                  '&:hover': {
+                    boxShadow: '0 2px 5px 0 rgba(0,0,0,.2)',
+                    zIndex:0,
+                    // backgroundColor:{isHovered?'red':'yellow+'}
+                  },
+                }}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
+                
+                <PopupState className='pop'>
+                  {(popupState) => (
+                    <div>
+                      <div className='img'
+                        {...bindTrigger(popupState)}>
+                       <img src={item.image} width={55} height={48} />
+
+                      </div>
+                      <Popover 
+                    PaperProps={{
+                      style: { width: '450px' },
+                    }}
+                        {...bindPopover(popupState)}
+                        anchorOrigin={{
+                          vertical: 'bottom',
+                          horizontal: 'center',
+                        }}
+                        transformOrigin={{
+                          vertical: 'top',
+                          horizontal: 'center',
+                        }}
+                      >
+                        <POpovers 
+                        practice={item.practice}
+                        year={item.year}
+                        projects={item.project}
+                        amount={item.pnumber}
+                        workforce={item.workforce}
+                        number={item.number}
+                        text={item.text}
+                        />
+                      </Popover>
+                    </div>
+                  )}
+                </PopupState>
+              </Box>
+            ))}
+
+            {/* <button className='toggle_btn' ></button> */}
+          </div>
+
+         
+          <div className='fronend_framework'> 
+          <div className='backend'>
+            Frontend Programming Languages
+          </div>
+
+          <div className='languages_title'> Languages </div>
+          <div className='item_of_lanuage'>
+            {Frontend.map((item) => (
+              <div className='item_group'
+
+              >
+
+                <PopupState className='pop' >
+                  {(popupState) => (
+                    <div >
+                      <div className='img'
+                        variant="contained" {...bindTrigger(popupState)}>
+                        <img src={item.image} width={55} height={48} />
+                      </div>
+                      
+                    
+                    </div>
+                  )}
+                </PopupState>
+              </div>
+            ))}
+
+            
+            {/* <button className='toggle_btn' ></button> */}
+          </div>
+
+          <div className='languages_title'>
+             javascript Frameworks
+          </div>
+          <div className='item_of_lanuage'>
+            {Framework.map((item) => (
+              <div className='item_group'
+
+              >
+
+                <PopupState variant="popover" popupId="demo-popup-popover">
+                  {(popupState) => (
+                    <div>
+                      <div className='img'
+                        variant="contained" {...bindTrigger(popupState)}>
+                        <img src={item.image} width={34} height={48} />
+                      </div>
+                      <Popover
+                    PaperProps={{
+                      style: { width: '450px' },
+                    }}
+                        {...bindPopover(popupState)}
+                        anchorOrigin={{
+                          vertical: 'bottom',
+                          horizontal: 'center',
+                        }}
+                        transformOrigin={{
+                          vertical: 'top',
+                          horizontal: 'center',
+                        }}
+                      >
+                        <POpovers 
+                        practice={item.practice}
+                        year={item.year}
+                        projects={item.project}
+                        amount={item.pnumber}
+                        workforce={item.workforce}
+                        number={item.number}
+                        text={item.text}
+                        />
+                      </Popover>
+                    </div>
+                  )}
+                </PopupState>
+              </div>
+            ))}
+
+            
+            {/* <button className='toggle_btn' ></button> */}
+          </div>
+          </div>
+
+          {/* mobile application section */}
+          <div className='backend'>
+            Mobile
+          </div>
+          <div className='item_of_lanuage'>
+            {mobile.map((item) => (
+              <Box className='item_group'
+                style={{
+                  '&:hover': {
+                    boxShadow: '0 2px 5px 0 rgba(0,0,0,.2)',
+                    zIndex:0,
+                    // backgroundColor:{isHovered?'red':'yellow+'}
+                  },
+                }}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
+
+                <PopupState variant="popover" popupId="demo-popup-popover">
+                  {(popupState) => (
+                    <div>
+                      <div className='img'
+                        variant="contained" {...bindTrigger(popupState)}>
+                       <img src={item.image} width={55} height={48} />
+
+                      </div>
+                      <Popover
+                    PaperProps={{
+                      style: { width: '450px' },
+                    }}
+                        {...bindPopover(popupState)}
+                        anchorOrigin={{
+                          vertical: 'bottom',
+                          horizontal: 'center',
+                        }}
+                        transformOrigin={{
+                          vertical: 'top',
+                          horizontal: 'center',
+                        }}
+                      >
+                        <POpovers 
+                        practice={item.practice}
+                        year={item.year}
+                        projects={item.project}
+                        amount={item.pnumber}
+                        workforce={item.workforce}
+                        number={item.number}
+                        text={item.text}
+                        />
+                      </Popover>
+                    </div>
+                  )}
+                </PopupState>
+              </Box>
+            ))}
+
+            {/* <button className='toggle_btn' ></button> */}
+          </div>
+          {/* Mobile section ends here */}
+
+          {/* Databases / data storages */}
+          <div className='fronend_framework'> 
+          <div className='backend'>
+          Databases / data storages 
+          </div>
+
+          <div className='languages_title'> SQL </div>
+          <div className='item_of_lanuage'>
+            {database.map((item) => (
+              <div className='item_group'
+
+              >
+
+                <PopupState variant="popover" popupId="demo-popup-popover">
+                  {(popupState) => (
+                    <div>
+                      <div className='img'
+                        variant="contained" {...bindTrigger(popupState)}>
+                        <img src={item.image} width={55} height={48} />
+                      </div>
+                      <Popover
+                    PaperProps={{
+                      style: { width: '450px' },
+                    }} 
+                        {...bindPopover(popupState)}
+                        anchorOrigin={{
+                          vertical: 'bottom',
+                          horizontal: 'center',
+                        }}
+                        transformOrigin={{
+                          vertical: 'top',
+                          horizontal: 'center',
+                        }}
+                      >
+                        <POpovers 
+                        practice={item.practice}
+                        year={item.year}
+                        projects={item.project}
+                        amount={item.pnumber}
+                        workforce={item.workforce}
+                        number={item.number}
+                        text={item.text}
+                        />
+                      </Popover>
+                    </div>
+                  )}
+                </PopupState>
+              </div>
+            ))}
+
+            
+            {/* <button className='toggle_btn' ></button> */}
+          </div>
+
+          <div className='languages_title'>
+            Nosql
+          </div>
+          <div className='item_of_lanuage'>
+            {database.map((item) => (
+              <div className='item_group'
+
+              >
+
+                <PopupState variant="popover" popupId="demo-popup-popover">
+                  {(popupState) => (
+                    <div>
+                      <div className='img'
+                        variant="contained" {...bindTrigger(popupState)}>
+                      <img src={item.image} width={55} height={48} />
+                      </div>
+                      <Popover
+                    PaperProps={{
+                      style: { width: '450px' },
+                    }}
+                        {...bindPopover(popupState)}
+                        anchorOrigin={{
+                          vertical: 'bottom',
+                          horizontal: 'center',
+                        }}
+                        transformOrigin={{
+                          vertical: 'top',
+                          horizontal: 'center',
+                        }}
+                      >
+                        <POpovers 
+                        practice={item.practice}
+                        year={item.year}
+                        projects={item.project}
+                        amount={item.pnumber}
+                        workforce={item.workforce}
+                        number={item.number}
+                        text={item.text}
+                        />
+                      </Popover>
+                    </div>
+                  )}
+                </PopupState>
+              </div>
+            ))}
+
+            
+            {/* <button className='toggle_btn' ></button> */}
+          </div>
+          </div>
+
+          {/* database section ends here */}
+                        <Stacks/> 
+        </div>
+  )
+}
+
 export function Optimal(){
+ 
   return(
     <div className='optimal'>
+       
     <div> <img src='https://www.scnsoft.com/icons-tritone/scrum.svg' style={{height:'80px',width:'80px'}} alt='nothing' /></div>
     <div> 
       <div className='hp-title'> Scrum development </div>
       <div className='h'>  Software development is done in Sprints, 2–3-week iterations with identified granular goals and backlogs. We ensure process transparency via sprint planning meetings, daily stand-ups, sprint review (and demo), retrospective, backlog refinement (grooming). </div>
+      {/* <img src='https://www.scnsoft.com/software-development-services/software-development/cro/methodologies-scrum.svg' style={{height:'80px',width:'80px'}} alt='nothing' /> */}
       <div>Best for: any product development project with a need to test the idea, midsize projects in custom software development where software requirements cannot be accurately defined, incremental development of large complex software (which is easy to divide into small functional parts) to start getting value fast.</div>
     </div>
     </div>

@@ -3,7 +3,10 @@ import './service.css'
 import { Box, Grid, Hidden, Stack } from '@mui/material'
 // import StatsItem from '../../components/StatsItem'
 import StatsItem from '../../StatsItem'
-import { FlexContainer, Optimal, SoftwareForAdvancedBusiness, SoftwareTypesCard } from '../../Extra'
+import { FlexContainer, Optimal, SoftwareForAdvancedBusiness, SoftwareTypesCard, Technologies } from '../../Extra'
+import SideNav from '../../SideNav/SideNav'
+
+
 
 
 function ServiceHeader() {
@@ -87,11 +90,17 @@ function ServiceHeader() {
       </div>
       <h1 className='hp-title'>Software for Advanced Business Tasks </h1>
       <div style={{display:'flex',flexWrap:'wrap',gap:'10px',marginBottom:'10px'}}> 
-<SoftwareForAdvancedBusiness/>
-<SoftwareForAdvancedBusiness/>
-<SoftwareForAdvancedBusiness/>
+          <SoftwareForAdvancedBusiness/>
+          <SoftwareForAdvancedBusiness/>
+          <SoftwareForAdvancedBusiness/>
       </div>
     </div>
+
+    <div>
+      <h1 className='hp-title'>Reliable Techs & Tools We Are Proficient In </h1>
+      <Technologies/>
+    </div>
+
     <div>
       <h1 className='hp-title'>Choosing an Optimal Pace for Your Project</h1>
       < div style={{display:'flex',flexWrap:'wrap',gap:'10px',marginBottom:'10px'}}>
@@ -113,7 +122,15 @@ function ServiceHeader() {
     </div>
           
           </div>
-          <div className='right'>Navigation</div>
+          <div className='right'>
+           <SideNav
+           one={'Home'}
+           two={'about'}
+           three={'service'}
+           four={'service we offer'}
+           five={'we are here for u'}
+           />
+          </div>
 
         </div>
         </div>

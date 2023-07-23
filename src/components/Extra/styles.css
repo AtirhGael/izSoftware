@@ -175,9 +175,10 @@ img {
     border: 1px solid #dadfe3;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    /* height: 100%; */
     padding: 25px 20px;
     transition: background-color .18s ease;
+    min-height: 100px !important;
 }
 .softwareType{
     border: 1px solid #dadfe3;
@@ -186,6 +187,7 @@ img {
     height: 100%;
     /* padding: 25px 20px; */
     transition: background-color .18s ease;
+    max-width: 100%;
 }
 .softwareType::before{
     background-color: #005eb8;
@@ -236,6 +238,10 @@ img {
     gap: 25px;
     align-items: center;
     /* position: relative; */
+}
+.optimal:hover{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
+    z-index: 0;
 }
 @media(max-width: 446px) {
     .optimal{
