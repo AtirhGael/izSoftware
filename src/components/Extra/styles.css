@@ -125,6 +125,125 @@ img {
     vertical-align: middle;
     border-style: none;
 }
+.flex-comtainer{
+    border: 1px solid #dadfe3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.flex-comtainer::before{
+    background-color: #005eb8;
+    content: "";
+    display: block;
+    height: 10px;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+}
+.contain{
+    padding: 25px 20px;
+    height: 100%;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container-img{
+    height: 90px;
+    width: 100px;
+   
+}
+.title{
+    text-decoration: underline;
+    text-decoration-color: #005eb8;
+    text-underline-offset: 2px;
+    transition: color .12s ease-in-out;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal!important;
+    margin-bottom: 10px;
+    padding-top: 27px;
+}
+.textContent{
+    color: #000;
+    /* background-color: #000; */
+    max-width: 200px;
+}
+.softwareTypeCard{
+    border: 1px solid #dadfe3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 25px 20px;
+    transition: background-color .18s ease;
+}
+.softwareType{
+    border: 1px solid #dadfe3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* padding: 25px 20px; */
+    transition: background-color .18s ease;
+}
+.softwareType::before{
+    background-color: #005eb8;
+    content: "";
+    /* display: block; */
+    height: 10px;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+}
+.softwareTypeCard:hover{
+    background-color: #fffdf5
+}
+.softwareTypeCard_title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal!important;
+    margin-bottom: 10px;
+}
+.softwareTypeCard_img{
+  display: flex;
+  justify-content: center;
+}
+.softwareTypeCard_imgg{
+    height: 60px;
+    width: 60px;
+}
+.software_title{
+    font-weight: 700;
+    font-size: x-large;
+    padding-bottom: 10px;
+    /* text-rendering: auto; */
+    text-align: center;
+}
+.softwareCard_text{
+    max-width: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-indent: 2em;
+    /* background-color: #000; */
+}
+.optimal{
+    border: 1px solid #dadfe3;
+    margin-bottom: 30px;
+    padding: 10px 16px 20px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    /* position: relative; */
+}
+@media(max-width: 446px) {
+    .optimal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
 @media(max-width: 767px) {
     .swiper-slide {
     display: grid;

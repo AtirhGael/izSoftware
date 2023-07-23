@@ -575,7 +575,9 @@ function Home() {
    <LocalPhoneIcon color='#005eb8'/>
    <div>
     <div style={{color:'#005eb8'}}> +892837397037  </div>
-    <div style={{color:'#005eb8'}}>+892837397037</div>
+    <div style={{colorDescription
+
+:'#005eb8'}}>+892837397037</div>
    </div>
     </div>
     <div style={{display:'flex',gap:5}}> 

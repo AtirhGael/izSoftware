@@ -209,7 +209,7 @@ export default function About() {
           <div className='good_idea'>.</div>
         </Hidden>
         <h1 className='hp-title'>Our Service Map</h1>
-      {/* <Title text={'Our Service Map'} textAlign={'start'} size='h4' mb={5}  mt={6}/> */}
+      {/* <Title text={''} textAlign={'start'} size='h4' mb={5}  mt={6}/> */}
 
       <div
       className='box_service'

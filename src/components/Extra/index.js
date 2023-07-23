@@ -9,7 +9,7 @@ import { Button, Stack } from '@mui/material'
 import StatsItem from '../../components/StatsItem'
 import './styles.css'
 import { process,partnership } from '../Data/HomeData';
-
+import ArrowForwardSharpIcon from '@mui/icons-material/ArrowForwardSharp';
 
 export function Extra({bgCollor}) {
   return (
@@ -18,6 +18,80 @@ export function Extra({bgCollor}) {
     </div>
   )
 }
+
+export function FlexContainer(){
+  return(
+    <div className='flex-comtainer'> 
+    <div className='contain'>
+            <div className='image'>
+              <img src='	https://www.scnsoft.com/software-development-services/software-development/cro/custom-software.svg'
+              className='flex-container-img'
+              />
+            </div>
+            <div className='title'>Custom software development</div>
+            <div className='textContent'>We create software with long-term business value – tailored uniquely to your business processes and adjustable to future needs.</div>
+            
+
+    </div>
+          </div>
+  )
+}
+
+export function SoftwareTypesCard(){
+  return(
+    <div className='softwareTypeCard'>
+      <div className='softwareTypeCard_img'>
+        <img src='https://www.scnsoft.com/software-development-services/software-development/service_team-augmentation.svg
+' alt='immm' 
+style={{height:'80px',width:'80px'}}
+className='softwareTypeCard_imgg'/>
+      </div>
+      <div className='softwareTypeCard_title'> Business & project management </div>
+      <div className='softwareTypeCard_text'>
+        <ul>
+          <li>Project management</li>
+          <li>ERP</li>
+          <li>Task management</li>
+          <li>Risk and Issue management</li>
+          <li>Document management</li>
+        </ul>
+      </div>
+    </div>
+  )
+}
+
+export function SoftwareForAdvancedBusiness(){
+  return(
+    <div className='softwareType'>
+     <div style={{padding:'25px'}}>
+      <div className='software_title'> Business & project management </div>
+      <div className='softwareCard_text'>
+      Software that can find sophisticated patterns in data and continuously learn to deliver more accurate results. Read more on https://www.scnsoft.com/services/software-development
+      </div>
+    <div style={{textAlign:'end',color:'#005eb8',display:'flex',alignItems:'center',justifyContent:'end'}}>
+      Our Expertise in Ai
+<ArrowForwardSharpIcon style={{color:'#005eb8'}} />
+    </div>
+     </div>
+    </div>
+  )
+}
+export function Optimal(){
+  return(
+    <div className='optimal'>
+    <div> <img src='https://www.scnsoft.com/icons-tritone/scrum.svg' style={{height:'80px',width:'80px'}} alt='nothing' /></div>
+    <div> 
+      <div className='hp-title'> Scrum development </div>
+      <div className='h'>  Software development is done in Sprints, 2–3-week iterations with identified granular goals and backlogs. We ensure process transparency via sprint planning meetings, daily stand-ups, sprint review (and demo), retrospective, backlog refinement (grooming). </div>
+      <div>Best for: any product development project with a need to test the idea, midsize projects in custom software development where software requirements cannot be accurately defined, incremental development of large complex software (which is easy to divide into small functional parts) to start getting value fast.</div>
+    </div>
+    </div>
+  )
+}
+
+
+
+
 export function Industries({image,text}){
   const [isHovered, setIsHovered] = useState(false);
 
