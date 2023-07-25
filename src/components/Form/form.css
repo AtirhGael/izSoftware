@@ -6,13 +6,19 @@
     outline: none;
     padding: 14px 10px 8px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+.formDiv{
+    max-width: 100%;
 }
 .formRow{
    display: flex;
-   gap: 10px;
+   gap: 5px;
+   max-width: 100%;
 }
 .textarearDiv{
     padding-top: 2%;
+    max-width: 100%;
 }
 .textArea{
     height: 100%;
@@ -57,6 +63,7 @@
     margin-bottom: 20px;
     color: #222;
     line-height: normal;
+    max-width: 100%;
 }
 .btn{
     background-color: #005eb8 !important; 
@@ -78,6 +85,16 @@
     white-space: normal;
     width: auto;
 }
+@media(max-width:900px) {
+    .formRow{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+    }
+    .input{
+        width: 100%;
+    }
+ }
 @media(max-width:414px) {
     .formRow{
         flex-direction: column;
@@ -104,16 +121,7 @@
    
         line-height: normal;
     }
-    .updloadArea{
-        display: flex;
-        flex-direction: column;
-        font-size: 13px;
-        justify-content: center;
-        position: relative;
-        text-align: center;
-        transition: border .3s ease;
-        width: 100%;
-    }
+ 
     .updloadField{
         font: inherit;
         font-size: 14px;
@@ -128,6 +136,7 @@
         margin-bottom: 20px;
         color: #222;
         line-height: normal;
+        width: 100%;
     }
    
 }

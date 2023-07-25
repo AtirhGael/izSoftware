@@ -1,14 +1,9 @@
-
-.sb-header-transparent:not(.header-menu-open) {
-    background-color: transparent!important;
-    box-shadow: none!important
-}
-
 .sb-wrapper {
     height: 100vh;
     margin-bottom: 68px;
     position: relative;
-    width: 100%
+    width: 100%;
+    background-image: url('https://www.freepik.com/free-photo/empty-sea-beach-background_3502704.htm#query=beach&position=1&from_view=keyword&track=sph');
 }
 p {
     display: block;
@@ -21,6 +16,7 @@ p {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    display: flex;
 }
 .row{
     display: flex;
@@ -61,7 +57,8 @@ p {
     z-index: 1;
 }
 .processes{
-    padding-top: 70px;
+    padding-top: 70px;  
+    min-height: 200px;
 }
 .main_containers{
     padding-left: 15%;
@@ -96,7 +93,13 @@ p {
     font-size: 80px;
 }
 .txt-slider{
-    margin: 60px;
+    /* margin: 60px; */
+    padding-left: 15%;
+    padding-right: 15%
+}
+.Choose-science{
+    padding-left: 15%;
+    padding-right: 15%
 }
 .middle_text{
     text-align: center;
@@ -128,10 +131,24 @@ align-items: center;
     padding-right: 16%;
     padding-top: 5%;
     padding-bottom: 10%;
-    display: flex;
-    /* flex-direction: row; */
+    display: flex !important;
+    flex-direction: row;
     justify-content: space-between ;
     gap: 20px;
+}
+.last_sections{
+    display: flex;
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    gap: 35px;
+}
+.last_sec{
+    width: 60%;
+}
+.last_tion{
+    width: 40%;
 }
 .last_section_second{
     width: 45%;
@@ -147,7 +164,7 @@ align-items: center;
         font-size: 16px;
     }
     .last_section{
-        
+        display: flex;
         flex-direction: column;
          width: 100%;
          gap: 20px;
@@ -209,6 +226,9 @@ align-items: center;
     }
 }
 @media(max-width: 375px) {
+    .sb-wrapper{
+        width: 100%;
+    }
     .last_section{
        flex-direction: column;
         width: 100%;
@@ -410,6 +430,12 @@ li{
         flex-direction: column;
         gap: 10;
     }
+}
+@media(max-width:900px) {
+   .last_sections{
+    display: flex;
+    flex-direction: column;
+   }
 }
 @media(max-width:500px) {
     .Busines_schoose{

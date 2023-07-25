@@ -1,12 +1,13 @@
 import React from 'react'
 import SideNav from '../../components/SideNav/SideNav'
-import { SoftwareTypesCard } from '../../components/Extra'
+import { Optimal, SoftwareTypesCard, Transform } from '../../components/Extra'
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
+import TimeLine from '../../components/Timeline/TimeLine';
 
 export default function DigitalTransform() {
   return (
@@ -58,30 +59,20 @@ export default function DigitalTransform() {
               
             </div>
             <h1 className='hp-title'>How We Unfold Digital Transformation</h1>
+           
 
             <div>
-            <Timeline>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Eat</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-        </TimelineSeparator>
-        <TimelineContent>Sleep</TimelineContent>
-      </TimelineItem>
-    </Timeline>
+              <TimeLine/>
+            </div>
+            <h1 className='hp-title'>Choosing an Optimal Pace for Your Project</h1>
+            <Optimal/>
+            <Optimal/>
+            <h1 className='hp-title'>Digital Transformation Technologies We Use to Ensure Business Value </h1>
+            <div style={{display:'flex',flexWrap:'wrap',gap:'7px',}}>
+            <Transform/>
+            <Transform/>
+            <Transform/>
+            <Transform/>
             </div>
           </div>
           <div className='right'>
@@ -90,6 +81,7 @@ export default function DigitalTransform() {
               two={'about'}
               three={'contact'}
               four={'sevices'}
+              five={'five'}
             />
           </div>
         </div>

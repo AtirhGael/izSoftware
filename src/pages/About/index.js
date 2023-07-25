@@ -216,7 +216,7 @@ export default function About() {
       >
 
         {data.map((item, index) => (
-          <Card className='main_box_service'
+            <Card className='main_box_service'
           
           >
             <Extra
@@ -285,7 +285,7 @@ export default function About() {
         {/* <Title text={' Our Capabilities and Technological Expertise'} textAlign={'start'} size='h4' mb={5} mt={10} /> */}
         <div className='solution_text' style={{ fontSize: 20, paddingTop: 2, paddingBottom: 18
          }}> We have over 750 IT professionals on board, 22% of whom are senior-level, who are well-versed in the following technology domains: </div>
-        <div className='capability_section'>
+       <div className='capability_section'>
           <div className='backend'>
             Backend Programming Languages
           </div>
@@ -308,9 +308,9 @@ export default function About() {
                 <PopupState className='pop'>
                   {(popupState) => (
                     <div>
-                      <div className='img'
+                      <div className='images'
                         {...bindTrigger(popupState)}>
-                        <img src={item.image} width={55} height={48} />
+                       <img src={item.image} width={55} height={48} />
 
                       </div>
                       <Popover
@@ -362,7 +362,7 @@ export default function About() {
                 <PopupState className='pop' >
                   {(popupState) => (
                     <div >
-                      <div className='img'
+                      <div className='imagg'
                         variant="contained" {...bindTrigger(popupState)}>
                         <img src={item.image} width={55} height={48} />
                       </div>
@@ -390,9 +390,9 @@ export default function About() {
                 <PopupState variant="popover" popupId="demo-popup-popover">
                   {(popupState) => (
                     <div>
-                      <div className='img'
+                      <div className='imagg'
                         variant="contained" {...bindTrigger(popupState)}>
-                        <img src={item.image} width={55} height={48} />
+                        <img src={item.image} width={34} height={48} />
                       </div>
                       <Popover
                     PaperProps={{
@@ -450,9 +450,9 @@ export default function About() {
                 <PopupState variant="popover" popupId="demo-popup-popover">
                   {(popupState) => (
                     <div>
-                      <div className='img'
+                      <div className='imagg'
                         variant="contained" {...bindTrigger(popupState)}>
-                        <img src={item.image} width={55} height={48} />
+                       <img src={item.image} width={55} height={48} />
 
                       </div>
                       <Popover
@@ -505,7 +505,7 @@ export default function About() {
                 <PopupState variant="popover" popupId="demo-popup-popover">
                   {(popupState) => (
                     <div>
-                      <div className='img'
+                      <div className='imagg'
                         variant="contained" {...bindTrigger(popupState)}>
                         <img src={item.image} width={55} height={48} />
                       </div>
@@ -555,9 +555,9 @@ export default function About() {
                 <PopupState variant="popover" popupId="demo-popup-popover">
                   {(popupState) => (
                     <div>
-                      <div className='img'
+                      <div className='imagg'
                         variant="contained" {...bindTrigger(popupState)}>
-                       <img src={item.image} width={55} height={48} />
+                      <img src={item.image} width={55} height={48} />
                       </div>
                       <Popover
                     PaperProps={{
@@ -692,7 +692,8 @@ export default function About() {
       </Box>
       <section>
     
-      <Title text={'What Our Customers Get Choosing ScienceSoft as a Vendor'} textAlign={'start'} size='h4' mb={5}  mt={9}/>
+    <h1 className='hp-title'>What Our Customers Get Choosing ScienceSoft as a Vendor</h1>
+      {/* <Title text={'What Our Customers Get Choosing ScienceSoft as a Vendor'} textAlign={'start'} size='h4' mb={5}  mt={9}/> */}
       </section>
 
       <Box mt={10} className='service_card'>  

@@ -69,6 +69,18 @@ className='softwareTypeCard_imgg'/>
   )
 }
 
+
+export function Transform(){
+return(
+  <div className='trans_container'>
+    <img alt='nothing' src='https://www.scnsoft.com/blue-outline-icons/ml-1.svg'
+    style={{height:'70px',width:'70px'}}
+    />
+    <div className='trans_text' >Machine And Dep Learning</div>
+  </div>
+)
+}
+
 export function SoftwareForAdvancedBusiness(){
   return(
     <div className='softwareType'>
@@ -137,16 +149,16 @@ export function Technologies(){
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
-                
+
                 <PopupState className='pop'>
                   {(popupState) => (
                     <div>
-                      <div className='img'
+                      <div className='images'
                         {...bindTrigger(popupState)}>
                        <img src={item.image} width={55} height={48} />
 
                       </div>
-                      <Popover 
+                      <Popover
                     PaperProps={{
                       style: { width: '450px' },
                     }}
@@ -195,7 +207,7 @@ export function Technologies(){
                 <PopupState className='pop' >
                   {(popupState) => (
                     <div >
-                      <div className='img'
+                      <div className='imagg'
                         variant="contained" {...bindTrigger(popupState)}>
                         <img src={item.image} width={55} height={48} />
                       </div>
@@ -223,7 +235,7 @@ export function Technologies(){
                 <PopupState variant="popover" popupId="demo-popup-popover">
                   {(popupState) => (
                     <div>
-                      <div className='img'
+                      <div className='imagg'
                         variant="contained" {...bindTrigger(popupState)}>
                         <img src={item.image} width={34} height={48} />
                       </div>
@@ -283,7 +295,7 @@ export function Technologies(){
                 <PopupState variant="popover" popupId="demo-popup-popover">
                   {(popupState) => (
                     <div>
-                      <div className='img'
+                      <div className='imagg'
                         variant="contained" {...bindTrigger(popupState)}>
                        <img src={item.image} width={55} height={48} />
 
@@ -338,14 +350,14 @@ export function Technologies(){
                 <PopupState variant="popover" popupId="demo-popup-popover">
                   {(popupState) => (
                     <div>
-                      <div className='img'
+                      <div className='imagg'
                         variant="contained" {...bindTrigger(popupState)}>
                         <img src={item.image} width={55} height={48} />
                       </div>
                       <Popover
                     PaperProps={{
                       style: { width: '450px' },
-                    }} 
+                    }}
                         {...bindPopover(popupState)}
                         anchorOrigin={{
                           vertical: 'bottom',
@@ -388,7 +400,7 @@ export function Technologies(){
                 <PopupState variant="popover" popupId="demo-popup-popover">
                   {(popupState) => (
                     <div>
-                      <div className='img'
+                      <div className='imagg'
                         variant="contained" {...bindTrigger(popupState)}>
                       <img src={item.image} width={55} height={48} />
                       </div>
@@ -428,7 +440,7 @@ export function Technologies(){
           </div>
 
           {/* database section ends here */}
-                        <Stacks/> 
+                        <Stacks/>
         </div>
   )
 }
@@ -440,7 +452,7 @@ export function Optimal(){
        
     <div> <img src='https://www.scnsoft.com/icons-tritone/scrum.svg' style={{height:'80px',width:'80px'}} alt='nothing' /></div>
     <div> 
-      <div className='hp-title'> Scrum development </div>
+      <div style={{fontWeight:'bold',fontSize:'30px',padding:'15px 0px 15px'}}> Scrum development </div>
       <div className='h'>  Software development is done in Sprints, 2–3-week iterations with identified granular goals and backlogs. We ensure process transparency via sprint planning meetings, daily stand-ups, sprint review (and demo), retrospective, backlog refinement (grooming). </div>
       {/* <img src='https://www.scnsoft.com/software-development-services/software-development/cro/methodologies-scrum.svg' style={{height:'80px',width:'80px'}} alt='nothing' /> */}
       <div>Best for: any product development project with a need to test the idea, midsize projects in custom software development where software requirements cannot be accurately defined, incremental development of large complex software (which is easy to divide into small functional parts) to start getting value fast.</div>
@@ -455,12 +467,7 @@ export function Optimal(){
 export function Industries({image,text}){
   const [isHovered, setIsHovered] = useState(false);
 
-  const containerStyles = {
-
-    transition: '0.3s',
-    // backgroundColor: isHovered ? '#e0e0e0' : 'transparent',
-  };
-
+ 
   const lineStyles = {
     with:'100%',
     transition: '0.5s',
@@ -477,7 +484,6 @@ export function Industries({image,text}){
   return(
     <div >
         <div className='inner'
-        style={containerStyles}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         >
@@ -487,7 +493,7 @@ export function Industries({image,text}){
            
           <div className='second' > 
           <div className='item_aditable_image'>
-            <img src={image}
+            <img src={image} alt='nothing to show'
             height={100}
             width={100}
             />

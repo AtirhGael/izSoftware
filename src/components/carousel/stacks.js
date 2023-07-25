@@ -23,9 +23,9 @@ function Stacks() {
                 <PopupState variant="popover" popupId="demo-popup-popover">
                   {(popupState) => (
                     <div>
-                      <div className='img'
+                      <div className='imagg'
                         variant="contained" {...bindTrigger(popupState)}>
-                        <img src={item.image} width={55} height={55} />
+                        <img src={item.image} width={55} height={55} alt='nthng'/>
                       </div>
                       <Popover
                     PaperProps={{
@@ -73,7 +73,7 @@ function Stacks() {
                 <PopupState variant="popover" popupId="demo-popup-popover">
                   {(popupState) => (
                     <div>
-                      <div className='img'
+                      <div className='imagg'
                         variant="contained" {...bindTrigger(popupState)}>
                         <img src={item.image} width={55} height={55} />
                       </div>
@@ -122,7 +122,7 @@ function Stacks() {
                 <PopupState variant="popover" popupId="demo-popup-popover">
                   {(popupState) => (
                     <div>
-                      <div className='img'
+                      <div className='imagg'
                         variant="contained" {...bindTrigger(popupState)}>
                         <img src={item.image} width={55} height={55} />
                       </div>

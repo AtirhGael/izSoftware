@@ -123,13 +123,12 @@ height: '100%';
     width: 100%;
 }
 .box{
-    /* align-items: stretch; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 10px;
-    /* height: 300px; */
+   display: flex;
+   min-width: 80%;
+   flex-basis: 200px;
+   gap: 20px;
+   flex-wrap: wrap;
+   /* height: ; */
 }
 .solutions_box{
     display: flex;
@@ -160,12 +159,11 @@ height: '100%';
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.1), 0 -1px 5px 0 rgba(0,0,0,.05);
     justify-content: center;
     margin: 0 0px 0 0;
-    min-height: 120px;
+    min-height: 120px !important;
     padding: 0 0;
-    /* text-align: center; */
-    transition: all .5s ease;
-   
-    width: 200px;
+    transition: all .5s ease; 
+    /* width: 200px; */
+    min-width: 200px !important;
 }
 .inner:hover{
     text-decoration: #005eb8;
@@ -613,9 +611,7 @@ h1 {
 }
 .box_serve{
     border: 1px solid #dadfe3;
-    /* display: flex;
-    flex-direction: column; */
-    height: 100%;
+    /* height: 100%; */
     padding: 25px 20px;
     width: 100%;
 }
@@ -624,8 +620,8 @@ h1 {
     height: 100%;
    /* flex-grow: 2; */
    /* flex-shrink: 1; */
-   width: '100%';
-   flex-basis: 300px;
+   /* width: 30%; */
+   flex-basis: 400px;
    height: 450px;
 }
 .box_service{
