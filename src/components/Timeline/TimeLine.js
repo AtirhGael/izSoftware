@@ -4,11 +4,14 @@ import {Timeline, TimelineEvent} from 'react-event-timeline'
 function TimeLine() {
   return (
     <div>
- <Timeline>
+            <Timeline
+            lineColor='#005EB8'
+            >
             <TimelineEvent title="it takes from 2 weeks to"
                            createdAt="Planning"
                            icon={<i className="material-icons md-18">1</i>}
-            >
+                           iconColor='#005EB8'
+                        >
                 <ul>
                     <li>Document key business processes and how they’re covered with existing software</li>
                     <li>Elicit business needs and concerns</li>
@@ -28,6 +31,7 @@ function TimeLine() {
                 // title="You sent an email to John Doe"
                 createdAt="Architecture UI and Ux"
                 icon={<i className="material-icons md-18">2</i>}
+                iconColor='#005EB8'
             >
                 Like  <ul>
                     <li>Document key business processes and how they’re covered with existing software</li>

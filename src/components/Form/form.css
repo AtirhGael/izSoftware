@@ -85,6 +85,19 @@
     white-space: normal;
     width: auto;
 }
+@media(max-width:1033px) {
+    /* .formRow{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+    }
+    .input{
+        width: 100%;
+    } */
+    .textArea{
+        width: 100%;
+    }
+ }
 @media(max-width:900px) {
     .formRow{
      display: flex;

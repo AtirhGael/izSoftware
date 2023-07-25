@@ -79,7 +79,7 @@ function ServiceHeader() {
       <div>
       Along with the deep knowledge of software architecting and coding principles, we have accumulated vast domain experience and understanding of the context that our software operates in.
       </div>
-      <h1 style={{fontSize:'50px',color:'#000',paddingTop:'20px'}}>By business function</h1>
+      <h1 style={{fontSize:'30px',color:'#000',paddingTop:'20px'}}>By business function</h1>
       <div style={{display:'flex',flexWrap:'wrap',gap:'10px',marginBottom:'10px'}} >
       <SoftwareTypesCard/>
       <SoftwareTypesCard/>
