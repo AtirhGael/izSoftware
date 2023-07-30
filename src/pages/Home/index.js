@@ -46,7 +46,7 @@ function Home() {
     </div>
     <div className='solu' style={{width:'100%',backgroundColor:'#004485',paddingBottom:'5%',paddingTop:'7%',paddingLeft:'12%',paddingRight:'8%'}} >
        
-       <h1 className='h-title'> Solutions We deliver</h1>
+       <h1 className='hp-title'> Solutions We deliver</h1>
        
         <div className='solution_text' style={{ fontSize: 20, paddingTop: 2, paddingBottom: 10, color:'#fff' }}> With over 34 years in Information Technology, we have built up expertise in dozens of domains, including: </div>
 

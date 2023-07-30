@@ -1,0 +1,108 @@
+.main-career{
+    padding-left: 15%;
+    padding-top: 6%;
+    padding-right: 15%;
+}
+.career-title{
+    position: relative;
+    top: -70px;
+    text-transform: uppercase;
+    font-family: dinot_black,sans-serif;
+    font-size: 2.5rem;
+    color: #373838;
+    margin-bottom: -2rem;
+    text-align: center;
+}
+.job-opening{
+    font-family: dinot_bold,sans-serif;
+    text-transform: uppercase;
+    color: #b7c54f;
+    padding-top: 0;
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+}
+.job-opening::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgba(0,0,0,.3);
+    margin-top: 1rem;
+}
+.career-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-apply{
+    font-family: dinot_light,sans-serif;
+    text-transform: uppercase;
+    background: #fff;
+    border: 1px solid #24603f;
+    color: #24603f;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    max-height: 60px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.job-title{
+    font-size: 40px;
+    font-weight: 800;
+}
+.job-position{
+    font-size: 30;
+}
+.modal-box{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: 24;
+  /* boxShadow: 24; */
+  /* p: 4; */
+  width:60%;
+  padding: 50px;
+  border-radius: 10px;
+}
+@media (max-width:450px) {
+    .career-title{
+        padding-top: 5% !important;
+    }
+    
+}
+@media (max-width:550px) {
+    .career-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+    }
+    .career-title{
+        padding-top: 5% !important;
+    }
+    
+}
+@media (max-width:1020) {
+    .btn-apply{
+       height: 100%;
+       background-color: black !important;
+    }
+    .modal-box{
+        width: 90% !important;
+    }
+}
+@media (max-width:760px) {
+    .career-title{
+        padding-top: 5% !important;
+    }
+}

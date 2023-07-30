@@ -140,6 +140,22 @@ img {
     right: 1px;
     top: 1px;
 }
+.flex-comtainer_service{
+    border: 1px solid #dadfe3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 450px;
+}
+.flex-comtainer_service::before{
+    background-color: #005eb8;
+    content: "";
+    display: block;
+    height: 10px;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+}
 .contain{
     padding: 25px 20px;
     height: 100%;
@@ -166,10 +182,21 @@ img {
     margin-bottom: 10px;
     padding-top: 27px;
 }
+.titles{
+    text-underline-offset: 2px;
+    transition: color .12s ease-in-out;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal!important;
+    margin-bottom: 10px;
+    padding-top: 27px;
+}
 .textContent{
     color: #000;
     /* background-color: #000; */
     max-width: 200px;
+    
 }
 .softwareTypeCard{
     border: 1px solid #dadfe3;
@@ -248,8 +275,6 @@ img {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.1), 0 -1px 5px 0 rgba(0,0,0,.05);
     display: flex;
     flex-direction: column;
-    /* flex-grow: 0;
-    flex-shrink: 0; */
     justify-content: center;
     margin: 0 35px 35px 0;
     min-height: 120px;
@@ -270,11 +295,56 @@ img {
     margin-top: 0;
     word-break: break-word;
 }
+.contents_last{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-wrap: wrap;
+}
+.bground{
+    background-color: #f2f9fe;
+    border-radius: 2px;
+    color: #717171;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+.seeMore{
+    align-items: end;
+    color: #005eb8;
+    font-size: 14px;
+    font-weight: 600;
+  text-align: end;
+    text-transform: uppercase;
+}
+.implementation{
+    border: 1px solid #005eb8;
+    color: #005eb8;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 12px 72px 12px 32px;
+    position: relative;
+    transition: all .16s ease-in-out;
+}
+.implementation:hover{
+    color: #fff;
+    background-color: #005eb8;
+}
 @media(max-width: 446px) {
     .optimal{
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+    .flex-comtainer_service{
+        min-width: 300px;
     }
 }
 @media(max-width: 767px) {

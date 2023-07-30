@@ -22,3 +22,22 @@
     display: flex;
     width: 100%;
 }
+.main-case-study{
+    padding: 8% 10% 0 13%;
+}
+@media (max-width: 900px){
+    .mainHealth{
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+}
+@media (max-width: 500px){
+    .mainHealth{
+        display: flex;
+    }
+}
+@media (max-width:414px) {
+    .main-case-study{
+        padding: 35% 2% 0 3%;
+    }
+}

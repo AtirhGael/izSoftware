@@ -61,7 +61,7 @@ function NavBarCollapse (){
                         Industries
                     </MenuItem>
                 </Link>
-                <Link href='/case-studies' underline="none" color="textPrimary">
+                <Link href='/case-study' underline="none" color="textPrimary">
                     <MenuItem>
                         Case Studies
                     </MenuItem>
@@ -118,7 +118,7 @@ function NavBarCollapse (){
                             <MenuItem component={"a"} href={"/services/software-consulting"}> Software Consulting</MenuItem>
                             <MenuItem component={"a"} href={"/services/software-development"}>Software Development</MenuItem>
                             <MenuItem component={"a"} href={"/services/software-consulting"}>e-Government Development</MenuItem>
-                            <MenuItem component={"a"} href={"/services/software-consulting"}>Testing and QA</MenuItem>
+                            <MenuItem component={"a"} href={"/professiona-services"}>Testing and QA</MenuItem>
                             <MenuItem component={"a"} href={"/services/software-consulting"}>IT Support</MenuItem>
                             <MenuItem component={"a"} href={"/services/software-consulting"}>Cloud Solutions</MenuItem>
                     </Menu>

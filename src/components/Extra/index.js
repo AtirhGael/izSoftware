@@ -14,6 +14,8 @@ import { Backend, Framework, Frontend, database, mobile } from '../Data/serviceM
 import {Box} from '@mui/material';
 import PopupState, { bindPopover, bindTrigger } from 'material-ui-popup-state';
 import Stacks from '../carousel/stacks';
+import CardActions from '@mui/material/CardActions';
+import CardMedia from '@mui/material/CardMedia';
 
 
 
@@ -43,6 +45,73 @@ export function FlexContainer(){
           </div>
   )
 }
+
+export function ServiceCompany(){
+  return(
+    <div className='flex-comtainer_service'> 
+    <div className='contain'>
+            <div className='image'>
+              <img src='https://www.scnsoft.com/professional-services/crm.svg'
+              className='flex-container-img' alt='nthing'
+              />
+            </div>
+            <div className='titles'>CRM</div>
+            <div className='textContent'>We create software with.</div>
+            <ul>
+              <li>Building brand awareness. .</li>
+              <li>Content marketing. .</li>
+              <li>Omnichannel lead generation. .</li>
+              <li>Customer journey management. .</li>
+            </ul>
+            <div className='textContent'>Sales</div>
+            <ul>
+              <li>Long-cycle sales. .</li>
+              <li>Account development. .</li>
+              <li>Building brand awareness.</li>
+              <li>Building brand.</li>
+            </ul>
+            <div className='textContent'>Technologies / Platform</div>
+            <div className='contents_last'>
+              <div className='bground'>Dynamics 365 Marketing .</div>
+              <div className='bground'>Dynamics 365 Sales </div>
+            </div>
+            <div className='seeMore'>
+              See More
+            </div>
+    </div>
+          </div>
+  )
+}
+export function ITService(){
+  return(
+    <div className='flex-comtainer_service'> 
+    <div className='contain'>
+            <div className='image'>
+              <img src='https://www.scnsoft.com/professional-services/crm.svg'
+              className='flex-container-img' alt='nthing'
+              />
+            </div>
+            <div className='titles'>CRM</div>
+            <div className='textContent'>We create software with.</div>
+            <ul>
+              <li>Building brand awareness. .</li>
+              <li>Content marketing. .</li>
+              <li>Omnichannel lead generation. .</li>
+              <li>Customer journey management. .</li>
+            </ul>
+            <div className='textContent'>Sales</div>
+            <ul>
+              <li>Long-cycle sales. .</li>
+              <li>Account development. .</li>
+              <li>Building brand awareness.</li>
+              <li>Building brand.</li>
+            </ul>
+          <div className='implementation'>Request Emplementation</div>
+    </div>
+          </div>
+  )
+}
+
 
 export function SoftwareTypesCard({text}){
   return(
@@ -97,35 +166,34 @@ export function SoftwareForAdvancedBusiness(){
     </div>
   )
 }
-// const ReadMore = ({ children }) => {
-//   const text = children;
-//   const [isReadMore, setIsReadMore] = useState(true);
-//   const toggleReadMore = () => {
-//     setIsReadMore(!isReadMore);
-//   };
-//   return (
-//     <p className="text">
-//       {isReadMore ? text.slice(0, 150) : text}
-//       <span onClick={toggleReadMore} className="read-or-hide">
-//         {isReadMore ? "...read more" : " show less"}
-//       </span>
-//     </p>
-//   );
-// };
-// <div className="container">
-//       <h2>
-//         <ReadMore>
-//           GeeksforGeeks: A Computer Science portal for geeks. 
-//           It contains well written, well thought and well explained
-//           computer science, programming articles and quizzes. 
-//           It provides a variety of services for you to learn, so thrive
-//           and also have fun! Free Tutorials, Millions of Articles, Live, 
-//           Online and Classroom Courses ,Frequent Coding Competitions,
-//           Webinars by Industry Experts, Internship opportunities, and Job
-//           Opportunities. Knowledge is power!
-//         </ReadMore>
-//       </h2>
-//     </div>
+export function CArdComponent({navigation}){
+  return (
+    <Card sx={{ maxWidth: 450 }}
+    onPress={()=>navigation.navigate('addblog')}
+    >
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="200"
+        image="	https://www.scnsoft.com/blog-pictures/crm-pics/law-crm.png"
+      />
+      <CardContent>
+        <div className='ty'>CRM</div>
+        <Typography gutterBottom variant="h5" component="div" className='card_C_title'>
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions style={{display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  );
+}
 
 export function Technologies(){
   const [isHovered, setIsHovered] = useState(false)
