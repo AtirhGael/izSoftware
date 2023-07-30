@@ -2,6 +2,7 @@ import React from 'react'
 import './careers.css'
 import { CareersPage } from '../../components/carousel/CarouselHead'
 import ModalPopUp from '../../components/Modal/Modal'
+import Share from '../../components/share/Share'
 
 function Careers() {
   return (
@@ -56,6 +57,7 @@ function Careers() {
         </div>
       
         </div>
+        <Share/>
     </div>
     </div>
   )

@@ -26,7 +26,7 @@ function OurOfferings() {
       {width>414? 
       <div>
       
-        <h1 className="hp-title" name="Services"></h1>
+        <h1 className="hp-title" name="Services">Explore Our Offering </h1>
         <ul className='a-service'>
                     <div className="a-services_">
             <div>

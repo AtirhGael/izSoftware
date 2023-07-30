@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import store from './redux/setup/store';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './pages/About';
 import IZNavBar from './components/Header/IZNavBar'
 import Copyright from './components/Footer/Footer'
@@ -21,7 +19,7 @@ function App() {
   const [isSigning] = useState(true);
 
   return (
-    <Provider store={store}>
+ 
       <BrowserRouter>
       <IZNavBar/>
       <Routes>
@@ -32,7 +30,7 @@ function App() {
         <Route path='/healthcare/services' element={<Health/>}/>
         <Route path='/professiona-services' element={<Professional/>}/>
         <Route path='/professiona-services-extra' element={<ExtraService/>}/>
-        <Route path='/case-study' element={<CaseAtudy/>}/>
+        <Route path='/case-studies' element={<CaseAtudy/>}/>
         <Route path='/blog-post' element={<BlogPost/>}/>
         <Route path='/careers' element={<Careers/>}/>
         <Route path='/careers-more' element={<More/>}/>
@@ -42,7 +40,7 @@ function App() {
       </Routes>
       <Copyright/>
       </BrowserRouter>
-    </Provider>
+
   );
 }
 

@@ -16,6 +16,7 @@ import PopupState, { bindPopover, bindTrigger } from 'material-ui-popup-state';
 import Stacks from '../carousel/stacks';
 import CardActions from '@mui/material/CardActions';
 import CardMedia from '@mui/material/CardMedia';
+import { Link } from 'react-router-dom';
 
 
 
@@ -166,10 +167,10 @@ export function SoftwareForAdvancedBusiness(){
     </div>
   )
 }
-export function CArdComponent({navigation}){
+export function CArdComponent({onpress}){
   return (
     <Card sx={{ maxWidth: 450 }}
-    onPress={()=>navigation.navigate('addblog')}
+   
     >
       <CardMedia
         component="img"
@@ -189,7 +190,8 @@ export function CArdComponent({navigation}){
       </CardContent>
       <CardActions style={{display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
         <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        {/* <Button   onPress={onpress} size="small">Learn More</Button> */}
+        <Link to={'blog-post'}>Learn More</Link>
       </CardActions>
     </Card>
   );

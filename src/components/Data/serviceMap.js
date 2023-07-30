@@ -8,7 +8,7 @@ const data =[
         bgColor:'#54a473'
     },
     {
-        title:'Software development ',
+        title:' ',
        
           text:'Design, development, and support of enterprise software: web and mobile applications, cloud development, libraries and APIs.',
           text1:'SaaS product development. ',

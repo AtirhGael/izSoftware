@@ -2,6 +2,7 @@ import React from 'react'
 import { Avatar } from '@mui/material'
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import SideNav from '../../components/SideNav/SideNav';
+import Share from '../../components/share/Share';
 
 function BlogPost() {
   return (
@@ -66,6 +67,7 @@ function BlogPost() {
            three={'how izsoftware can help'}
            />
         </div>
+        <Share/>
     </div>
     </div>
   )

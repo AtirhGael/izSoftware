@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-import { divnk } from 'react-router-dom'
-import frontendUrl from '../../urls/frontendUrl'
-import Title from '../../components/Title'
 import { Box, Grid, Hidden, Stack } from '@mui/material'
 import about from '../../assets/images/about.jpg'
 import StatsItem from '../../components/StatsItem'
@@ -19,6 +16,7 @@ import './styles.css'
 import styled from 'styled-components';
 import { Partnerships } from '../../components/carousel'
 import Stacks from '../../components/carousel/stacks'
+import Share from '../../components/share/Share'
 // import MyCarousel from '../../components/carousel'
 
 const StyledTypography = styled(Typography)`
@@ -700,12 +698,12 @@ export default function About() {
           <div className='service_logo'>
           <p><img alt="Predictable performance and quality" className='service_logo_img' data-src="https://www.scnsoft.com/about/company-new/what-customers-get-01.svg" height="100" width="100" src="https://www.scnsoft.com/about/company-new/what-customers-get-01.svg" data-ll-status="loaded"/></p>
           </div>
-          <div class="a-service-cards_content">
+          <div className="a-service-cards_content">
           <div>
-          <h3 class="a-service-cards_content-header">
+          <h3 className="a-service-cards_content-header">
           A quality-first company
           </h3>
-          <div class="a-service-cards_content-title">
+          <div className="a-service-cards_content-title">
           <p>We provide only high-quality software and services to our clients. We guarantee you will get tangible business value from your IT investments, enjoy healthy project processes, professional and motivated teams, effective communication between ScienceSoft, your teams, and stakeholders.</p>
           <p>To achieve this, ScienceSoft has developed a <a href="https://www.scnsoft.com/about/quality-management">comprehensive quality management system</a> that resides in quality-centered leadership, committed employees, transparent KPIs, data-driven decision-making, continuous process improvement, quality controls throughout the SDLC, and more.</p>
           </div>
@@ -716,12 +714,12 @@ export default function About() {
           <div className='service_logo'>
           <p><img alt="Predictable performance and quality" className='service_logo_img' data-src="https://www.scnsoft.com/about/company-new/what-customers-get-01.svg" height="100" width="100" src="https://www.scnsoft.com/about/company-new/what-customers-get-02.svg" data-ll-status="loaded"/></p>
           </div>
-          <div class="a-service-cards_content">
+          <div className="a-service-cards_content">
           <div>
-          <h3 class="a-service-cards_content-header">
+          <h3 className="a-service-cards_content-header">
           Top-notch security
           </h3>
-          <div class="a-service-cards_content-title">
+          <div className="a-service-cards_content-title">
           <p>34 years in IT services without security breaches, we guarantee full protection of our customers’ data. We heavily invest in a mature information security system compliant with ISO 27001 and sustainable security culture, retain top security experts on board and follow CIS, NIST, OWASP requirements and recommendations. Our approach builds on diligent IT assets management, secure environment, strict access control, strong encryption algorithms, continuous IT infrastructure monitoring, and the "security is everyone's responsibility" mindset. .</p>
           </div>
           </div>
@@ -731,46 +729,19 @@ export default function About() {
           <div className='service_logo'>
           <p><img alt="Predictable performance and quality" className='service_logo_img' data-src="https://www.scnsoft.com/about/company-new/what-customers-get-01.svg" height="200" width="300" src="https://www.scnsoft.com/about/company-new/what-customers-get-01.svg" data-ll-status="loaded"/></p>
           </div>
-          <div class="a-service-cards_content">
+          <div className="a-service-cards_content">
           <div>
-          <h3 class="a-service-cards_content-header">
+          <h3 className="a-service-cards_content-header">
           Fast development while retaining application stability 
           </h3>
-          <div class="a-service-cards_content-title">
+          <div className="a-service-cards_content-title">
           <p>We established a set of management and technology practices that allows us to release new application versions every 2-3 weeks and implement minor updates up to several times a day. We achieve that due to an iterative approach to development, resorting to Agile project management practices, and relying on cloud-native architectures and modern approaches to infrastructure management</p>
           </div>
           </div>
           </div>
       </Box>
-
-      <div>
-      <div class="page-share">
-            <p class="page-share-desc">Share:</p>
-            <a class="page-share-link">
-            <span class="sr-only">facebook</span>
-            <img
-            src={require('../../assets/images/LinkedIn.webp')}
-            style={{height:"100%",width:'100%',borderRadius:50}}
-            />
-            </a>
-            <a class="page-share-link">
-            <span class="sr-only">twitter</span>
-            <i class="icon-s-twitter">
-            <img
-            src={require('../../assets/images/ytb.png')}
-            style={{height:"100%",width:'100%',borderRadius:50}}
-            />
-            </i>
-            </a>
-            <a class="page-share-link" data-piwik-event="Share buttons,click,linkedin" rel="noopener noreferrer nofollow">
-            <span class="sr-only">linkedin</span>
-            <img
-            src={require('../../assets/images/t.png')}
-            style={{height:"100%",width:'100%',borderRadius:10,objectFit:'fill'}}
-            />
-            </a>
-            </div>
-      </div>
+            <Share/>
+      
     </Box>
   )
 }

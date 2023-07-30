@@ -1,5 +1,6 @@
 import React from 'react'
 import { CaseStudy } from '../../components/carousel/CarouselHead'
+import Share from '../../components/share/Share'
 
 function CaseAtudy() {
   return (
@@ -8,6 +9,7 @@ function CaseAtudy() {
         <div style={{gap:5}}>
         <CaseStudy/><CaseStudy/><CaseStudy/>
         </div>
+        <Share/>
     </div>
   )
 }
