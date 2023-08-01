@@ -28,7 +28,7 @@ function Home() {
     <div>
        <BackgroundCarousel/>
         <div className="container">
-        <h1 className="hp-title">Software consulting and development <br/> for your digital success</h1>
+        <h1 className="hp-title">Software consulting and development for your digital success</h1>
         </div>
 
     <div className='container'>
@@ -44,11 +44,11 @@ function Home() {
     <div>
         <OurOfferings/>
     </div>
-    <div className='solu' style={{width:'100%',backgroundColor:'#004485',paddingBottom:'5%',paddingTop:'7%',paddingLeft:'12%',paddingRight:'8%'}} >
+    <div className='solu' style={{width:'100%',backgroundColor:'#004485',paddingBottom:'3%',paddingLeft:'12%',paddingRight:'8%'}} >
        
-       <h1 className='hp-title'> Solutions We deliver</h1>
+       <h1 className='hp-title' style={{color:'#fff'}}> Solutions We deliver</h1>
        
-        <div className='solution_text' style={{ fontSize: 20, paddingTop: 2, paddingBottom: 10, color:'#fff' }}> With over 34 years in Information Technology, we have built up expertise in dozens of domains, including: </div>
+        <div className='solution_text' style={{ fontSize: 20,  color:'#fff' }}> With over 34 years in Information Technology, we have built up expertise in dozens of domains, including: </div>
 
         <div 
         className='solutions_box2'
@@ -114,14 +114,14 @@ function Home() {
         <h1 className="hp-title">Why Businesses Choose ScienceSoft </h1>
         <div className='Busines_schoose' >
           <ul >
-            <li className='box_geography_text'> 3,600+ success stories </li>d
+            <li className='box_geography_text'> 3,600+ success stories </li>
             <li className='box_geography_text'> 1,220+ happy clients. </li>
-            <li className='box_geography_text'> An inspired, close-knit team of 750+ IT specialists, including IT consultants, project managers, technical architects, developers, QA engineers, security and DevOps engineers, AI and blockchain experts, AWS and Azure professionals.</li>
+            <li className='box_geography_text'> An inspired, close-knit team of 750+ IT specialists, including IT consultants, project managers, technical architects, developers, QA engineers, security </li>
           </ul>
           <ul >
             <li className='box_geography_text'> Partnerships with Microsoft and AWS. </li>
             <li className='box_geography_text'>A quality-first approach based on a mature ISO 9001-certified quality management system. </li>
-            <li className='box_geography_text'> ISO 27001-certified security management based on field-tested security knowledge, ever-green policies, effective processes, advanced security technology, and skilled professionals. Read more on https://www.scnsoft.com/</li>
+            <li className='box_geography_text'> ISO 27001-certified security management based on field-tested security knowledge, ever-green policies, effective processes,</li>
           </ul>
         </div>
         </div>
@@ -129,14 +129,14 @@ function Home() {
 
       
 
-        <div style={{backgroundColor:'#FFF'}}>
+        <div style={{backgroundColor:'#FFF',paddingBottom:20}}>
   <div className='container'>
     <div className='row'>
       <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 left-content">
       <h1 className="hp-title">Industry Expertise</h1>
       </div>
-      <div className='processes'>
-      <div className='box'>
+      <div className='industry_processes'>
+      <div className='box_industry_expertise'>
           {serviceData.map((item, index) => (
             <div>
             <Industries
@@ -148,35 +148,6 @@ function Home() {
         </div>
       </div>
     </div>
-  </div>
- <div className='last_last'>
- <h1 className='ht-tittle'>Need a Consultation?</h1>
-
- <div className='last_sections'> 
-      <div className='last_sec'>
-            <Form/>
-         </div>
-      <div className='last_tion'> 
-      <div style={{fontSize:22,fontWeight:'bold',paddingTop:8}}>Our contact details</div>
-   <div>
-   <div style={{display:'flex',gap:5}}> 
-   <LocalPhoneIcon color='#005eb8'/>
-   <div>
-    <div style={{color:'#005eb8'}}> +892837397037  </div>
-    <div style={{colorDescription
-
-:'#005eb8'}}>+892837397037</div>
-   </div>
-    </div>
-    <div style={{display:'flex',gap:5}}> 
-    <EmailIcon/>
-    <span style={{color:'#005eb8'}}> contact@scnsoft.com </span>
-       </div>
-       
-     
-   </div>
-      </div>
-  </div>
   </div>
 </div>
     

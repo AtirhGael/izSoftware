@@ -3,10 +3,10 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Logo from '../../resources/images/IZ2.svg';
 import Avatar from '@mui/material/Avatar';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import PlaceIcon from '@mui/icons-material/Place';
@@ -36,7 +36,7 @@ function Copyright(){
 
 export default function Footer(){
     return (
-        <Box sx={{ backgroundColor: '#000000', color: 'white', p: 5, width: '100%'}}>  
+        <Box sx={{ backgroundColor: '#000000', color: '#fff', p: 5, width: '100%'}}>  
             <div>
                 <Grid container direction="row" justifyContent="center" alignItems="center">
                     <Grid item xs={12} sm={12} md={10}>
@@ -59,7 +59,8 @@ export default function Footer(){
                                                     <Typography variant="subtitle1">
                                                         Nairobi, Kenya
                                                     </Typography> 
-                                                </Grid>                                      
+                                                </Grid>    
+                                                                                
                                             </Grid> 
                                             <Grid container direction="row" justifyContent="flex-start" alignItems="center">  
                                                 <Grid item xs={2} sm={2} md={2} lg={2} xl={2}>
@@ -99,7 +100,8 @@ export default function Footer(){
                                                 <Grid item xs={2} sm={2} md={2} lg={2} xl={2}>
                                                     <Link  href="https://www.youtube.com/@izsoftwares" underline="none" color="inherit">
                                                         <Typography>
-                                                            <YouTubeIcon titleAccess="Youtube Account"/>                           
+                                                            <YouTubeIcon titleAccess="Youtube Account"/>  
+                                                                                     
                                                         </Typography>  
                                                     </Link>
                                                 </Grid>  

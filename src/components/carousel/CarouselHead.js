@@ -215,16 +215,19 @@ export const CaseStudy = () =>{
        <img alt='nothing' style={{height:'100%',width:'100%'}} className='imageSectionsm' src='https://www.scnsoft.com/images-for-slider-with-content/custom-software-dev/customer-portal-development-for-a-tax-consultation-agency.jpg'/>
       </div>
       <div className='textsection1'> 
-      <div className='hp-title' style={{marginTop:-35}}> Development of a Records Management System for a Legal Firm </div>
+      <div className='casestudy-title' style={{marginTop:-35}}> Development of a Records Management System for a Legal Firm </div>
+      <div className='case-study-text'> 
       A SharePoint-based records management system with document profiling and calendaring capabilities. The system ensures records immutability and facilitates management of large volumes of legal documents
+      A SharePoint-based records management system with document profiling and calendaring capabilities. The system ensures records immutability and facilitates management of large volumes of legal documents
+      </div>
       
       <div className='details1'> 
-      <Link to={'professiona-services-extra'}>
+      <Link style={{textDecoration:'none',color:'#005eb8'}} to={'professiona-services-extra'}>
        Learn More
       </Link>
       
       <ArrowForwardIcon sx={{
-           color: "white",
+           color: "#005eb8",
          
          }}/>
       </div>

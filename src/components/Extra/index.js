@@ -161,7 +161,7 @@ export function SoftwareForAdvancedBusiness(){
       </div>
     <div style={{textAlign:'end',color:'#005eb8',display:'flex',alignItems:'center',justifyContent:'end'}}>
       Our Expertise in Ai
-<ArrowForwardSharpIcon style={{color:'#005eb8'}} />
+    <ArrowForwardSharpIcon style={{color:'#005eb8'}} />
     </div>
      </div>
     </div>

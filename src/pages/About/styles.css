@@ -130,6 +130,13 @@ height: '100%';
    flex-wrap: wrap;
    /* height: ; */
 }
+.box_industry_expertise{
+    display: flex;
+   /* width: 200px !important; */
+    gap: 20px;
+    flex-wrap: wrap;
+    /* min-height: 100px !important; */
+}
 .solutions_box{
     display: flex;
     flex-direction: row;
@@ -159,11 +166,11 @@ height: '100%';
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.1), 0 -1px 5px 0 rgba(0,0,0,.05);
     justify-content: center;
     margin: 0 0px 0 0;
-    min-height: 120px !important;
+    min-height: 250px !important;
     padding: 0 0;
     transition: all .5s ease; 
     /* width: 200px; */
-    min-width: 200px !important;
+    min-width: 350px !important;
 }
 .inner:hover{
     text-decoration: #005eb8;
@@ -243,10 +250,11 @@ height: '100%';
 }
 .backend{
     color: #004775 !important;
-    font-size: 24px !important;
+    font-size: 26px !important;
     line-height: 1.67 !important;
     margin: 0 0 4px !important;
     padding-left: 60px !important;
+    padding-top: 25px;
 }
 .languages_section{
   display: flex;
@@ -499,7 +507,7 @@ ul:not([class]) {
     padding: 0;
 }
 h2{
-    color: #004485;
+    /* color: #004485; */
     font-family: Sumana,serif;
     font-size: 36px;
     font-weight: 400;
@@ -509,16 +517,19 @@ h2{
     z-index: 1;
     /* padding-top: 20px; */
 }
+.subtitle1{
+    color: #fff;
+}
 h2:before {
-    background-color: #e5f3ff;
+    /* background-color: #e5f3ff;
     content: "";
-    display: block;
+   
     height: 90px;
     left: -24px;
     position: absolute;
     top: -32px;
     width: 90px;
-    z-index: -1;
+    z-index: -1; */
 }
 .service_card{
     border: 1px solid #dadfe3;
@@ -660,7 +671,7 @@ h1 {
     border-radius: 50%;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,.17);
     color: #0065c5;
-    display: inline-block;
+    display: flex;
     font-size: 22px;
     height: 40px;
     line-height: 44px;
@@ -668,6 +679,8 @@ h1 {
     margin-right: 10px;
     text-align: center;
     width: 40px;
+    align-items: center !important;
+    justify-content: center !important;
 }
 .sr-only {
     clip: rect(0,0,0,0);
@@ -679,17 +692,7 @@ h1 {
     position: absolute;
     width: 1px;
 }
-[class*=" icon-s-"], [class^=icon-s-] {
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: s-icons!important;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 1;
-    text-transform: none;
-}
+
 
 
 
@@ -822,7 +825,7 @@ h1 {
         margin: 10px;
     }
     h1 {
-        font-size: 40px;
+        /* font-size: 40px; */
         line-height: 1.25;
     }
     h2:before {

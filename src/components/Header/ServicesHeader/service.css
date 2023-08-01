@@ -4,15 +4,15 @@
     /* padding: 5%; */
     padding-left: 7%;
     padding-right: 7%;
-    padding-top: 1%;
-    padding-bottom: 5%;
+    /* padding-top: 1%; */
+
     display: flex !important;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 .icp-header{
-    max-width: 45%;
+    max-width: 50%;
 }
 .icp-title{
     color: #fff;
@@ -25,7 +25,7 @@
     margin: 0 0 16px;
 }
 .text{
-    color: #fff;
+    color: #fff !important;
     font-size: 18px;
     font-style: italic;
     line-height: normal;
@@ -66,7 +66,7 @@
     width: 100%;
 }
 .left{
-    width: 75%;
+    width: 100%;
 }
 .right{
     box-sizing: border-box!important;

@@ -19,7 +19,7 @@ function ServiceHeader() {
         </h1>   
         <p className="icp-text">Our Passion is to Deliver Software that Helps You Succeed</p>
         <div className="icp-header-phrase">
-        <p className='text'>Combining over 30 years of experience in IT and a great drive for innovation, ScienceSoft designs and builds software to rely on: secure, high-performing, scalable, and user-friendly.</p>
+        <div className='text'>Combining over 30 years of experience in IT and a great drive for innovation, ScienceSoft designs and builds software to rely on: secure, high-performing, scalable, and user-friendly.</div>
         </div>
         <div className="icp-header-link-wrapper">
         <button  className="icp" >
@@ -122,15 +122,7 @@ function ServiceHeader() {
     </div>
           
           </div>
-          <div className='right'>
-           <SideNav
-           one={'Home'}
-           two={'about'}
-           three={'service'}
-           four={'service we offer'}
-           five={'we are here for u'}
-           />
-          </div>
+          
 
         </div>
         </div>

@@ -7,7 +7,9 @@ function CaseAtudy() {
     <div className='main-case-study'>
         <h1 style={{color:'#000'}}>Selected Success Stories from Our 3,600-Project Portfolio</h1>
         <div style={{gap:5}}>
-        <CaseStudy/><CaseStudy/><CaseStudy/>
+        <CaseStudy/>
+        <CaseStudy/>
+        <CaseStudy/>
         </div>
         <Share/>
     </div>

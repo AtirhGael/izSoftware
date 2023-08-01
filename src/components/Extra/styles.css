@@ -212,8 +212,7 @@ img {
     display: flex;
     flex-direction: column;
     height: 100%;
-    /* padding: 25px 20px; */
-    transition: background-color .18s ease;
+    transition: .18s ease;
     max-width: 100%;
 }
 .softwareType::before{

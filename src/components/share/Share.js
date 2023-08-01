@@ -1,4 +1,10 @@
 import React from 'react'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+
+
+ 
 
 function Share() {
   return (
@@ -6,27 +12,18 @@ function Share() {
       <div className="page-share">
             <p className="page-share-desc">Share:</p>
             <a className="page-share-link" href='/'>
-            <span className="sr-only">facebook</span>
-            <img alt='nothing'
-            src={require('../../assets/images/LinkedIn.webp')}
-            style={{height:"100%",width:'100%',borderRadius:50}}
-            />
+          
+            <FacebookIcon titleAccess="Youtube Account"/>  
             </a>
             <a className="page-share-link" href='/'>
-            <span className="sr-only">twitter</span>
-            <i className="icon-s-twitter">
-            <img alt='nothing'
-            src={require('../../assets/images/ytb.png')}
-            style={{height:"100%",width:'100%',borderRadius:50}}
-            />
-            </i>
+            
+           
+            <TwitterIcon titleAccess="Twitter Account"/> 
+           
             </a>
             <a className="page-share-link" href='/'>
-            <span className="sr-only">linkedin</span>
-            <img
-            src={require('../../assets/images/t.png')} alt='nothing'
-            style={{height:"100%",width:'100%',borderRadius:10,objectFit:'fill'}}
-            />
+           
+            <LinkedInIcon titleAccess="Linkedin Account"/> 
             </a>
             </div>
       </div>
