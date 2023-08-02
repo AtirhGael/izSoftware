@@ -92,15 +92,7 @@ function Professional() {
              </div>
         </div>
                 </div>
-                <div className='right'>
-                    <SideNav
-                    one={'about ScienceSoft'}
-                    two={'succes Stories'}
-                    three={'Our Service'}
-                    four={'Customer Review'}
-                    five={'Technology We Work With'}
-                    />
-                </div>
+
                 </div>
                
         </div>

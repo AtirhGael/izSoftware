@@ -75,15 +75,7 @@ export default function DigitalTransform() {
             <Transform/>
             </div>
           </div>
-          <div className='right'>
-            <SideNav
-              one={'home'}
-              two={'about'}
-              three={'contact'}
-              four={'sevices'}
-              five={'five'}
-            />
-          </div>
+         
         </div>
     </div>
   )

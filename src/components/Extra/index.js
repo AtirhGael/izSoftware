@@ -169,7 +169,7 @@ export function SoftwareForAdvancedBusiness(){
 }
 export function CArdComponent({onpress}){
   return (
-    <Card sx={{ maxWidth: 450 }}
+    <Card sx={{ maxWidth: 400 }}
    
     >
       <CardMedia

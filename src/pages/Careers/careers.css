@@ -56,6 +56,7 @@
 .job-title{
     font-size: 40px;
     font-weight: 800;
+    color: #24603f;
 }
 .job-position{
     font-size: 30;
@@ -68,8 +69,6 @@
     background-color: #fff;
   border: 1px solid #000;
   box-shadow: 24;
-  /* boxShadow: 24; */
-  /* p: 4; */
   width:60%;
   padding: 50px;
   border-radius: 10px;
@@ -92,10 +91,10 @@
     }
     
 }
-@media (max-width:1020) {
+@media (max-width:1020px) {
     .btn-apply{
        height: 100%;
-       background-color: black !important;
+       /* background-color: black !important; */
     }
     .modal-box{
         width: 90% !important;
@@ -104,5 +103,25 @@
 @media (max-width:760px) {
     .career-title{
         padding-top: 5% !important;
+    }
+}
+
+@media (max-width:600px) {
+    .btn-apply{
+       height: 100%;
+       /* background-color: black !important; */
+    }
+    .modal-box{
+        max-width: 90% !important;
+    }
+}
+@media (max-width:400px) {
+    .btn-apply{
+       height: 100%;
+       max-height: 80px;
+       margin-left:10px;
+    }
+    .modal-box{
+        max-width: 90% !important;
     }
 }

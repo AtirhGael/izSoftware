@@ -41,7 +41,7 @@ function Health() {
             </ul>
         </div>
         <div>
-            <ServicesProjects/>
+            
             <h1 className='hp-title'>Healthcare IT Services ScienceSoft Offers</h1>
             <span>We provide the following services separately or in combination.</span>
             <div style={{display:'flex',flexWrap:'wrap',gap:'10px',marginBottom:'10px'}}>
@@ -84,15 +84,7 @@ function Health() {
                 </ul>
         </div>
                 </div>
-                <div className='right'>
-                    <SideNav
-                    one={'about ScienceSoft'}
-                    two={'succes Stories'}
-                    three={'Our Service'}
-                    four={'Customer Review'}
-                    five={'Technology We Work With'}
-                    />
-                </div>
+               
                 </div>
                
         </div>

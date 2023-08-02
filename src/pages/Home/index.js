@@ -28,7 +28,7 @@ function Home() {
     <div>
        <BackgroundCarousel/>
         <div className="container">
-        <h1 className="hp-title">Software consulting and development for your digital success</h1>
+        <h1 className="hp-title">Software consulting and development   for your digital success</h1>
         </div>
 
     <div className='container'>

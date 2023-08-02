@@ -57,6 +57,25 @@ function Careers() {
         </div>
       
         </div>
+
+        <div style={{paddingTop:50}}>
+        <div className='job-opening'>consltancy</div>
+        <div className='career-container'>
+            <div>
+                <ul>
+                    <li>VACANCY ANNOUNCEMENT – BUSINESS DEVELOPMENT OFFICER</li>
+                </ul>
+                <div style={{paddingLeft:20}}>
+                    <div>lome, togo</div>
+                   
+                </div>
+            </div>
+            
+            <ModalPopUp/>
+            
+        </div>
+      
+        </div>
         <Share/>
     </div>
     </div>
