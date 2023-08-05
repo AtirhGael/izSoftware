@@ -20,6 +20,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { BackgroundCarousel } from '../../components/carousel/CarouselHead'
+import Share from '../../components/share/Share'
 
 function Home() {
     const [isHovered, setIsHovered] = useState(false)
@@ -27,11 +28,11 @@ function Home() {
   return (
     <div>
        <BackgroundCarousel/>
-        <div className="container">
+        <div className="container-home">
         <h1 className="hp-title">Software consulting and development   for your digital success</h1>
         </div>
 
-    <div className='container'>
+    <div className='container-home'>
         <div className='middle_text'>
         Since 1989. For millions of users. We transform businesses with powerful and adaptable digital solutions that satisfy the needs of today and unlock the opportunities of tomorrow.
         </div>
@@ -39,12 +40,18 @@ function Home() {
     </div>
 
     <div className='main_container'>
+      <Hidden smDown> 
         <Partnerships/>
+
+      </Hidden>
     </div>
-    <div>
+    <div >
+      <Hidden smDown>
         <OurOfferings/>
+
+      </Hidden>
     </div>
-    <div className='solu' style={{width:'100%',backgroundColor:'#004485',paddingBottom:'3%',paddingLeft:'12%',paddingRight:'8%'}} >
+    <div className='solu' style={{width:'100%',backgroundColor:'#004485',paddingBottom:'3%',paddingLeft:'14%',paddingRight:'12%'}} >
        
        <h1 className='hp-title' style={{color:'#fff'}}> Solutions We deliver</h1>
        
@@ -132,9 +139,9 @@ function Home() {
         <div style={{backgroundColor:'#FFF',paddingBottom:20}}>
   <div className='container'>
     <div className='row'>
-      <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 left-content">
+      
       <h1 className="hp-title">Industry Expertise</h1>
-      </div>
+      
       <div className='industry_processes'>
       <div className='box_industry_expertise'>
           {serviceData.map((item, index) => (
@@ -149,9 +156,22 @@ function Home() {
       </div>
     </div>
   </div>
+ 
 </div>
     
+<div style={{backgroundColor: 'rgb(246, 248, 248)',paddingLeft:80}}>
+            <h1 className='hp-title' style={{paddingLeft:'10%'}} >Need help with a similar project?</h1>
+            <div className='last_sections'> 
+        <div className='last_sec'>
+                <Form/>
+            </div>
       
+            </div>
+        </div>
+
+<div className='share-home'>
+<Share/>
+</div>
     </div>
   )
 }

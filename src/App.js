@@ -14,6 +14,8 @@ import Blog from './pages/Blog/Blog';
 import BlogPost from './pages/Blog/BlogPost';
 import Careers from './pages/Careers/Careers';
 import More from './pages/Careers/More';
+import InitContent from './components/Main/MainContactUs/InitContent';
+import Events from './pages/Event/Events';
 
 function App() {
   const [isSigning] = useState(true);
@@ -37,6 +39,8 @@ function App() {
         <Route path='/blog' 
          options={{title: 'Welcome'}}
         element={<Blog/>}/>
+        <Route path="/contact-us" element={<InitContent />} />
+        <Route path="/events" element={<Events/>} />
       </Routes>
       <Copyright/>
       </BrowserRouter>

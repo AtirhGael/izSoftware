@@ -8,7 +8,7 @@ function More() {
             <CareersPageMore/>
         </div>
         <div className='main-career'>
-            <h1 style={{textAlign:'center'}}>WORKING WITH AGF</h1>
+            <h1 style={{textAlign:'center'}}>WORKING WITH IzSoftware</h1>
             <span style={{paddingBottom:10}}>African Guarantee Fund (AGF) recognizes that its staff is the most important resource and is key to the achievement of the organization’s objectives. The achievement of AGF strategic objectives is dependent on having the right number of staff with the right knowledge, skills and competencies deployed in the right roles.</span>
             <div style={{paddingBottom:10,paddingTop:10}}>
             By joining our team, you choose to work in a Pan-African environment with the best, highly qualified professionals of diverse cultures while pursuing a progressive career path with learning and development as an integral part of your career. We are committed to employing and retaining the best talent in Africa.

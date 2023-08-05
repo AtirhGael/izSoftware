@@ -34,7 +34,7 @@ export function FlexContainer(){
     <div className='flex-comtainer'> 
     <div className='contain'>
             <div className='image'>
-              <img src='	https://www.scnsoft.com/software-development-services/software-development/cro/custom-software.svg'
+              <img alt='nothing' src='	https://www.scnsoft.com/software-development-services/software-development/cro/custom-software.svg'
               className='flex-container-img'
               />
             </div>
@@ -191,7 +191,7 @@ export function CArdComponent({onpress}){
       <CardActions style={{display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
         <Button size="small">Share</Button>
         {/* <Button   onPress={onpress} size="small">Learn More</Button> */}
-        <Link to={'blog-post'}>Learn More</Link>
+        <Link to="/blog-post" >Learn More</Link>
       </CardActions>
     </Card>
   );

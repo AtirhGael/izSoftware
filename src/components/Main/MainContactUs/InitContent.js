@@ -35,7 +35,7 @@ export default function InitContent() {
     }
 
     return (
-        <div id="contact">
+        <div id="contact" >
             <div className="wrapper top">
                 <div className="socials">
                 </div>

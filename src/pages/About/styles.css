@@ -132,10 +132,9 @@ height: '100%';
 }
 .box_industry_expertise{
     display: flex;
-   /* width: 200px !important; */
     gap: 20px;
     flex-wrap: wrap;
-    /* min-height: 100px !important; */
+   
 }
 .solutions_box{
     display: flex;
@@ -164,13 +163,13 @@ height: '100%';
 .inner{
     align-items: center;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.1), 0 -1px 5px 0 rgba(0,0,0,.05);
-    justify-content: center;
+    justify-content: space-evenly !important;
     margin: 0 0px 0 0;
     min-height: 250px !important;
     padding: 0 0;
     transition: all .5s ease; 
     /* width: 200px; */
-    min-width: 350px !important;
+    min-width: 410px !important;
 }
 .inner:hover{
     text-decoration: #005eb8;
@@ -210,6 +209,17 @@ height: '100%';
     background-repeat: no-repeat;
     width: 100%;
     padding-left: 12%;
+    
+}
+.capability_section-about{
+    padding: 20px;
+    background-color: rgb(214, 239, 255);
+    background-position: left top;
+    background-image: url('https://www.scnsoft.com/bundles/app/img/areas/parts/t-background.svg');
+    min-height: 60px;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* padding-left: 5%; */
     
 }
 .languages_title{
@@ -622,24 +632,21 @@ h1 {
 }
 .box_serve{
     border: 1px solid #dadfe3;
-    /* height: 100%; */
     padding: 25px 20px;
     width: 100%;
 }
 .main_box_service{
     border: 1px solid #dadfe3;
-    height: 100%;
-   /* flex-grow: 2; */
-   /* flex-shrink: 1; */
-   /* width: 30%; */
    flex-basis: 400px;
    height: 450px;
+   min-width: 420px;
 }
 .box_service{
     display: flex;
     gap: 12px;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 .main_box_geography{
@@ -909,6 +916,7 @@ h1 {
         flex-wrap: wrap;
         gap: 1px;
         width: 100%;
+        padding-left: 0px;
     }
     .item_group{
         display: flex;

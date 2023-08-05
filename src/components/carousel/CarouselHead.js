@@ -129,7 +129,7 @@ const Itema = ({ item }) => {
   return (
     <Paper
       style={{
-        backgroundImage: `url(${item.imageUrl})`,
+        backgroundImage:`url(${item.imageUrl})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh',
@@ -143,7 +143,7 @@ const Itema = ({ item }) => {
         <div style={{color:'#fff',fontSize:60,fontWeight:'bolder'}}>Careers</div>
         <div  style={{color:'#fff',fontSize:50,fontWeight:'bolder'}}>Work with IzSoftware</div>
         <div style={{color:'#fff',maxWidth:1000}}>AGF recognises that its’ staff are its most important resource and are key to the achievement of AGF’s objectives. The achievement of AGF’s strategic objectives is dependent on having the right number of staff, with the right knowledge, skills and competencies deployed in the right roles.</div>
-        <div className='read-more'>Read More</div>
+        <Link to='/careers-more' className='read-more'>Read More</Link>
       </div>
     </Paper>
   );
@@ -190,7 +190,7 @@ export const CardCarousel = () => {
          {item.description}
          
          <div className='details'> 
-         <Link to={'professiona-services-extra'}>
+         <Link to={'/professiona-services-extra'}>
           Project Details
          </Link>
          
@@ -222,7 +222,7 @@ export const CaseStudy = () =>{
       </div>
       
       <div className='details1'> 
-      <Link style={{textDecoration:'none',color:'#005eb8'}} to={'professiona-services-extra'}>
+      <Link  to='/professiona-services-extra' style={{textDecoration:'none',color:'#005eb8'}}>
        Learn More
       </Link>
       
@@ -258,8 +258,8 @@ const More = ({ item }) => {
   return (
     <Paper
       style={{
-        backgroundImage: `url(${item.imageUrl})`,
-        backgroundSize: 'cover',
+        backgroundImage:`url(${item.imageUrl})`,
+          backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh',
         display: 'flex',

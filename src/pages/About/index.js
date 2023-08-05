@@ -207,7 +207,7 @@ export default function About() {
           <div className='good_idea'>.</div>
         </Hidden>
         <h1 className='hp-title'>Our Service Map</h1>
-      {/* <Title text={''} textAlign={'start'} size='h4' mb={5}  mt={6}/> */}
+      
 
       <div
       className='box_service'
@@ -222,7 +222,7 @@ export default function About() {
             />
             <CardContent >
 
-              <Typography variant="h5" component="div">
+              <Typography variant="h5" component="div" sx={{fontSize:35}}>
                 {item.title}
               </Typography>
 
@@ -283,7 +283,7 @@ export default function About() {
         {/* <Title text={' Our Capabilities and Technological Expertise'} textAlign={'start'} size='h4' mb={5} mt={10} /> */}
         <div className='solution_text' style={{ fontSize: 20, paddingTop: 2, paddingBottom: 18
          }}> We have over 750 IT professionals on board, 22% of whom are senior-level, who are well-versed in the following technology domains: </div>
-       <div className='capability_section'>
+       <div className='capability_section-about'>
           <div className='backend'>
             Backend Programming Languages
           </div>

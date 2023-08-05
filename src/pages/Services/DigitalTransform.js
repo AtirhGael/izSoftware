@@ -11,7 +11,7 @@ import TimeLine from '../../components/Timeline/TimeLine';
 
 export default function DigitalTransform() {
   return (
-    <div className=''>
+    <div >
       <div className="icp-header-container">
         <div className="icp-header">
         <h1 className="icp-title">

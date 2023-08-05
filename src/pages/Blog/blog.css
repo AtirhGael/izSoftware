@@ -1,6 +1,6 @@
 .main_blog{
     padding-left: 13%;
-    padding-top: 5%;
+    padding-top: 7%;
     padding-right: 13%;
     padding-bottom: 5%;
 }
@@ -31,11 +31,10 @@
     gap: 20px;
 }
 .bellow1{
-    max-width: 75%;
+    max-width: 100%;
+    padding-top: 40px;
 }
-.bellow2{
-    /* max-width: 10; */
-}
+
 @media (max-width:900px) {
     .bellow{
         display: flex;

@@ -44,10 +44,12 @@
 .flexSectiom{
     display: flex;
     padding-top: 10%;
-    gap: 25px;
+    gap: 85px;
+    justify-content: space-evenly !important;
+    width: 100% !important;
 }
 .mainSection_extra{
-    padding: 3% 10% 0 10%;
+    padding: 3% 12% 0 14%;
 }
 .text{
     color: #3b3c3d;

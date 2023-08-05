@@ -11,7 +11,7 @@ function Blog() {
   return (
     <div className='main_blog'>
       <h1 className='hp-title'>Blog</h1>
-      <div style={{display:'flex',gap:10,flexWrap:'wrap'}}>
+      <div style={{display:'flex',gap:30,flexWrap:'wrap'}}>
       <CArdComponent
       onpress={pressable}
       />

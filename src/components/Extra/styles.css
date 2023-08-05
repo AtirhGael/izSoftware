@@ -146,6 +146,7 @@ img {
     flex-direction: column;
     height: 100%;
     min-width: 395px;
+    
 }
 .flex-comtainer_service::before{
     background-color: #005eb8;
@@ -157,8 +158,9 @@ img {
     top: 1px;
 }
 .contain{
-    padding: 25px 20px;
-    height: 100%;
+    padding:  18px;
+    /* height: 100%; */
+    /* min-width: 300px; */
 }
 .image{
     display: flex;
@@ -205,7 +207,8 @@ img {
     /* height: 100%; */
     padding: 25px 20px;
     transition: background-color .18s ease;
-    min-height: 100px !important;
+    min-height: 150px !important;
+    min-width: 450px;
 }
 .softwareType{
     border: 1px solid #dadfe3;
@@ -213,7 +216,8 @@ img {
     flex-direction: column;
     height: 100%;
     transition: .18s ease;
-    max-width: 400px;
+    max-width: 500px;
+    width: 490px;
 }
 .softwareType::before{
     background-color: #005eb8;

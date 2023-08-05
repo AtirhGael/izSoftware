@@ -12,6 +12,7 @@ function TimeLine() {
                            icon={<i className="material-icons md-18">1</i>}
                            iconColor='#005EB8'
                         >
+                            {/* <div>hekkeii</div> */}
                 <ul>
                     <li>Document key business processes and how they’re covered with existing software</li>
                     <li>Elicit business needs and concerns</li>

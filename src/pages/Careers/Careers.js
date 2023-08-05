@@ -59,7 +59,7 @@ function Careers() {
         </div>
 
         <div style={{paddingTop:50}}>
-        <div className='job-opening'>consltancy</div>
+        <div className='job-opening'>CONSULTANCIES</div>
         <div className='career-container'>
             <div>
                 <ul>

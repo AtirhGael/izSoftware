@@ -31,7 +31,7 @@ function BlogPost() {
         </div>
          </div>
     </div>
-    <div className='bellow'>
+   
         <div  className='bellow1'>
             <span style={{fontWeight:'bolder',fontSize:23}}> Editors Note:</span>
             <div style={{paddingBottom:20}}>
@@ -60,15 +60,9 @@ function BlogPost() {
               <li>Customer service solution – from $50 per user/month. </li>
             </ul>
         </div>
-        <div className='bellow2'>
-           <SideNav
-           one={'Roles Needee'}
-           two={'benefits'}
-           three={'how izsoftware can help'}
-           />
-        </div>
+       
         <Share/>
-    </div>
+    
     </div>
   )
 }

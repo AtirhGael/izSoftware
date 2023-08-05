@@ -25,6 +25,7 @@ function Health() {
           <Stack direction="row" mb={4} spacing={{ xs: 1, sm: 2, md: 12 }} variant='div'>
             <StatsItem number="34 years" title="years software development" />
             <StatsItem number="18 years" title="In HealthCare IT" />
+            <StatsItem number="18 years" title="In HealthCare IT" />
            <Hidden smDown>
            <StatsItem number="15 Years" title="of Experience in ITSM" />
             {/* <StatsItem number="30+" title="industry covers" /> */}
@@ -44,7 +45,7 @@ function Health() {
             
             <h1 className='hp-title'>Healthcare IT Services ScienceSoft Offers</h1>
             <span>We provide the following services separately or in combination.</span>
-            <div style={{display:'flex',flexWrap:'wrap',gap:'10px',marginBottom:'10px'}}>
+            <div style={{display:'flex',flexWrap:'wrap',gap:'4px',marginBottom:'10px',justifyContent:'start'}}>
                 <FlexContainer/>
           <FlexContainer/>
           <FlexContainer/>

@@ -5,21 +5,51 @@ import BtnCollapse from "./Component/BtnCollapse";
 import Link from '@mui/material/Link';
 import styled from "@emotion/styled";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-
+import './NavStyles.css'
 
 function NavBarCollapse (){
 
+    const [anchorEle, setAnchorEle] = React.useState(null);
+
+  const handleMouseOver = (event) => {
+    setAnchorEle(event.currentTarget);
+  };
+
+  const handleMouseOut = () => {
+    setAnchorEle(null);
+  };
+
     const [anchorEl, setAnchorEl] = React.useState(null);
+    const [anchorEl2, setAnchorEl2] = React.useState(null);
+    const [anchorEl1, setAnchorEl1] = React.useState(null);
 
     const open = Boolean(anchorEl);
+    const open1 = Boolean(anchorEl1);
+    const open2 = Boolean(anchorEl2);
 
     const handleClick = (event) => {
       setAnchorEl(event.currentTarget);
     };
 
+    const handleClick1 = (event) => {
+        setAnchorEl1(event.currentTarget);
+      };
+  
+    const handleClick2 = (event) => {
+        setAnchorEl2(event.currentTarget);
+      };
+  
+
     const handleClose = () => {
       setAnchorEl(null);
     };
+
+    const handleClose1 = () => {
+        setAnchorEl1(null);
+      };
+    const handleClose2 = () => {
+        setAnchorEl2(null);
+      };
 
     const ButtonStyledLink = styled(Button)({
         '&:hover': {
@@ -122,13 +152,35 @@ function NavBarCollapse (){
                             <MenuItem component={"a"} href={"/services/software-consulting"}>IT Support</MenuItem>
                             <MenuItem component={"a"} href={"/services/software-consulting"}>Cloud Solutions</MenuItem>
                     </Menu>
-                    <Link href='/industries' underline="none" color="textPrimary">
+
+                    <Link href='#' underline="none" color="textPrimary"  endIcon={<KeyboardArrowDownIcon />}
+                     aria-controls={open1 ? 'basic-menu' : undefined}
+                     aria-haspopup="true"
+                     aria-expanded={open1? 'true' : undefined}
+                     onClick={handleClick1}
+                    >
                         <ButtonStyledLink color="inherit">           
                             <Typography sx={{ fontWeight: 420}} variant="body1"> 
                                 Industries
                             </Typography>
                         </ButtonStyledLink>
                     </Link>
+                    <Menu
+                            id="basic-menu"
+                            anchorEl={anchorEl1}
+                            open={open1}
+                            onClose={handleClose1}
+                            MenuListProps={{
+                            'aria-labelledby': 'basic-button',
+                            }}
+                            sx={{marginTop: '20px',  borderRadius: 6}}
+                        >
+                            <MenuItem component={"a"} href={"/healthcare/services"}> Healthcare</MenuItem>
+                            <MenuItem component={"a"} href={"/professiona-services"}>professiona</MenuItem>
+                            <MenuItem component={"a"} href={"/careers"}>Careers</MenuItem>
+                            
+                    </Menu>
+                   
                     <Link href='/case-studies' underline="none" color="textPrimary">
                         <ButtonStyledLink color="inherit">           
                             <Typography sx={{ fontWeight: 420}} variant="body1"> 
@@ -136,13 +188,7 @@ function NavBarCollapse (){
                             </Typography>
                         </ButtonStyledLink>
                     </Link>
-                    <Link href='/blog' underline="none" color="textPrimary">
-                        <Button color="inherit">           
-                            <Typography sx={{ fontWeight: 420}} variant="body1"> 
-                                Blog
-                            </Typography>
-                        </Button>
-                    </Link>
+                   
                     <Link href="/about" underline="none" color="textPrimary">
                         <ButtonStyledLink color="inherit">          
                             <Typography sx={{ fontWeight: 420}} variant="body1"> 
@@ -150,6 +196,66 @@ function NavBarCollapse (){
                             </Typography>
                         </ButtonStyledLink>
                     </Link>
+
+                    <Link href='#' underline="none" color="textPrimary"  endIcon={<KeyboardArrowDownIcon />}
+                     aria-controls={open2 ? 'basic-menu' : undefined}
+                     aria-haspopup="true"
+                     aria-expanded={open2 ? 'true' : undefined}
+                     onClick={handleClick2}
+                    >
+                        <ButtonStyledLink color="inherit">           
+                            <Typography sx={{ fontWeight: 420}} variant="body1"> 
+                                Connect
+                            </Typography>
+                        </ButtonStyledLink>
+                    </Link>
+                    <Menu
+                            id="basic-menu"
+                            anchorEl={anchorEl2}
+                            open={open2}
+                            onClose={handleClose2}
+                            MenuListProps={{
+                            'aria-labelledby': 'basic-button',
+                            }}
+                            sx={{marginTop: '20px',  borderRadius: 6}}
+                        >
+                            <div style={{fontSize:18,textAlign:'center'}}>Stay up to date</div>
+                            <MenuItem component={"a"} href={"/blog"}>  
+                            <div className="nav-items-flex">
+                            <div className="nav-title-title">
+                            Blog
+                            </div> 
+                            <div className="nav-title-text">
+                                Get the latest salsforce product news and technical article
+                            </div>
+                            </div>
+                            
+                            </MenuItem>
+                            <MenuItem component={"a"} href={"/events"}>  
+                            <div className="nav-items-flex">
+                            <div className="nav-title-title">
+                            Events
+                            </div> 
+                            <div className="nav-title-text">
+                                join In-person and online events accros the salsforce ecosystem
+                            </div>
+                            </div>
+                            </MenuItem>
+                            <MenuItem component={"a"} href={"/services/software-consulting"}>  
+                            <div className="nav-items-flex">
+                            <div className="nav-title-title">
+                            Videos
+                            </div> 
+                            <div className="nav-title-text">
+                              Explore New features, tools, tips,tutorials,and more 
+                            </div  >
+                            <div className="nav-title-text"> with on-demand  and live streaming videos</div>
+                            </div>
+                            </MenuItem>
+                           
+                    </Menu>
+
+    
                     <Link href="/contact-us" underline="none" color="textPrimary">
                         <Button variant="contained" color="primary">
                             <Typography sx={{ fontWeight: 420}} variant="body1"> 

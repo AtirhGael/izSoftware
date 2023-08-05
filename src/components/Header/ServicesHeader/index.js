@@ -37,7 +37,7 @@ function ServiceHeader() {
         src="https://www.scnsoft.com/software-development-services/software-development/cro/cover-pic-sw-development.svg"/>
         </div>
         </div>
-        <div className='main'>
+        <div className='main-service-pages'>
           <div className='left'>
             <div className='section-text'><strong>
             Software development services
@@ -80,7 +80,8 @@ function ServiceHeader() {
       Along with the deep knowledge of software architecting and coding principles, we have accumulated vast domain experience and understanding of the context that our software operates in.
       </div>
       <h1 style={{fontSize:'30px',color:'#000',paddingTop:'20px'}}>By business function</h1>
-      <div style={{display:'flex',flexWrap:'wrap',gap:'10px',marginBottom:'10px'}} >
+      <div style={{display:'flex',flexWrap:'wrap',gap:'10px',marginBottom:'10px',justifyContent:'space-around'}} >
+      <SoftwareTypesCard/>
       <SoftwareTypesCard/>
       <SoftwareTypesCard/>
       <SoftwareTypesCard/>
@@ -89,7 +90,7 @@ function ServiceHeader() {
 
       </div>
       <h1 className='hp-title'>Software for Advanced Business Tasks </h1>
-      <div style={{display:'flex',flexWrap:'wrap',gap:'10px',marginBottom:'10px'}}> 
+      <div style={{display:'flex',flexWrap:'wrap',gap:'10px',marginBottom:'10px',justifyContent:'space-between'}}> 
           <SoftwareForAdvancedBusiness/>
           <SoftwareForAdvancedBusiness/>
           <SoftwareForAdvancedBusiness/>

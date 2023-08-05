@@ -9,7 +9,7 @@ import Form from '../../../components/Form/Form';
 
 function ExtraService() {
   return (
-    <div>
+    <div >
         <div className='imma'>
             <div className='secoo'> 
             <div className='imma_title'>
@@ -22,6 +22,14 @@ function ExtraService() {
                 <Stats
                 title={'Technologies'}
                 text={'MS SQL Server, Power BI, Python '}
+                />
+                 <Stats
+                title={'Length of cooperation '}
+                text={'5 YEARS'}
+                />
+                 <Stats
+                title={'Project Team'}
+                text={'9 ndevelopers'}
                 />
                 </div>
                 </div>
@@ -59,32 +67,13 @@ function ExtraService() {
             <div className='ftext'>Microsoft SQL Server (DWH), Python (ETL), Microsoft Power BI (Reporting) 
             </div>
         </div>
-        <div style={{backgroundColor: 'rgb(246, 248, 248)'}}>
+        <div style={{backgroundColor: 'rgb(246, 248, 248)',paddingLeft:80}}>
             <h1 className='hp-title' style={{paddingLeft:'10%'}} >Need help with a similar project?</h1>
             <div className='last_sections'> 
         <div className='last_sec'>
                 <Form/>
             </div>
-        <div className='last_tion'> 
-        <div style={{fontSize:22,fontWeight:'bold',paddingTop:8}}>Our contact details</div>
-    <div>
-    <div style={{display:'flex',gap:5}}> 
-    <LocalPhoneIcon color='#005eb8'/>
-    <div>
-        <div style={{color:'#005eb8'}}> +892837397037  </div>
-        <div style={{colorDescription
-
-    :'#005eb8'}}>+892837397037</div>
-    </div>
-        </div>
-        <div style={{display:'flex',gap:5}}> 
-        <EmailIcon/>
-        <span style={{color:'#005eb8'}}> contact@scnsoft.com </span>
-        </div>
-        
-        
-    </div>
-        </div>
+      
             </div>
         </div>
      

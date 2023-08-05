@@ -5,6 +5,10 @@
     width: 100%;
     background-image: url('https://www.freepik.com/free-photo/empty-sea-beach-background_3502704.htm#query=beach&position=1&from_view=keyword&track=sph');
 }
+.container-home{
+    padding-left: 14%;
+    padding-right: 14%;
+}
 p {
     display: block;
     margin-block-start: 1em;
@@ -16,8 +20,7 @@ p {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+   
     padding-top: 50px;
 }
 .main-title {
@@ -35,6 +38,10 @@ p {
     opacity: 0.10;
     z-index: 0;
     width: 100%;
+}
+.share-home{
+    padding-left: 14%;
+    /* padding-right: ; */
 }
 
 
