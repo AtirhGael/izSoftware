@@ -6,22 +6,25 @@ import Link from '@mui/material/Link';
 import styled from "@emotion/styled";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import './NavStyles.css'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function NavBarCollapse (){
 
     const [anchorEle, setAnchorEle] = React.useState(null);
 
   const handleMouseOver = (event) => {
-    setAnchorEle(event.currentTarget);
+    setAnchorEl1ee(event.currentTarget);
   };
 
   const handleMouseOut = () => {
-    setAnchorEle(null);
+    setAnchorEl1ee(null);
   };
+
 
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [anchorEl2, setAnchorEl2] = React.useState(null);
     const [anchorEl1, setAnchorEl1] = React.useState(null);
+    const [anchorEl1ee, setAnchorEl1ee] = React.useState(null);
 
     const open = Boolean(anchorEl);
     const open1 = Boolean(anchorEl1);
@@ -201,9 +204,14 @@ function NavBarCollapse (){
                      aria-controls={open2 ? 'basic-menu' : undefined}
                      aria-haspopup="true"
                      aria-expanded={open2 ? 'true' : undefined}
-                     onClick={handleClick2}
+                    //  onClick={handleClick2}
+                     onMouseEnter={handleMouseOver}
+                     onMouseLeave={handleMouseOut}
+                     
                     >
-                        <ButtonStyledLink color="inherit">           
+                        <ButtonStyledLink color="inherit"
+                        endIcon={<ExpandMoreIcon />}
+                        >           
                             <Typography sx={{ fontWeight: 420}} variant="body1"> 
                                 Connect
                             </Typography>
@@ -211,9 +219,10 @@ function NavBarCollapse (){
                     </Link>
                     <Menu
                             id="basic-menu"
-                            anchorEl={anchorEl2}
-                            open={open2}
-                            onClose={handleClose2}
+                            anchorEl={anchorEl1ee}
+                            open={Boolean(anchorEl1ee)}
+                            onClose={handleMouseOut}
+
                             MenuListProps={{
                             'aria-labelledby': 'basic-button',
                             }}

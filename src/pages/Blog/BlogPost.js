@@ -38,9 +38,7 @@ function BlogPost() {
             Tanya provides an overview of startup consulting, describes the major team roles, and explains the benefits of consulting services for business founders. If you need expert help navigating the early stages of your business development, reach out to ScienceSoft for our startup consulting services.
             </div>
             <div>Startup consulting services are a live-saver for entrepreneurs that need quick access to industry knowledge and professional advice to get their business off the ground. Startup consultants provide expert guidance and support in various aspects such as business strategy, product development, team management, branding, finance, sales, and more. To cover such a broad range of competencies, a startup consulting company usually provides a multi-skilled team of specialists from different business domains. </div>
-            <img alt='nothing' src='https://www.scnsoft.com/blog-pictures/custom-service-marketplace-development/startup-consulting.png'
-            style={{height:'60vh',width:'90%'}}
-            />
+           
             <h1 className='hp-title'>Key Features of Law CRM</h1>
             <ul>
               <li style={{color:'#000',fontWeight:'bolder'}}> Customer data centralization.</li>
