@@ -226,7 +226,7 @@ function NavBarCollapse (){
                             MenuListProps={{
                             'aria-labelledby': 'basic-button',
                             }}
-                            sx={{marginTop: '20px',  borderRadius: 6}}
+                            sx={{marginTop: '20px',  borderRadius: 18}}
                         >
                             <div style={{fontSize:18,textAlign:'center'}}>Stay up to date</div>
                             <MenuItem component={"a"} href={"/blog"}>  

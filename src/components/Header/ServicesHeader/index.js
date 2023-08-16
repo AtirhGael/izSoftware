@@ -68,7 +68,7 @@ function ServiceHeader() {
         <h1 className='hp-title'>
           Different Collaboration Scenarios for Your Software Development 
           </h1>
-    <div style={{display:'flex',flexWrap:'wrap',gap:'10px',marginBottom:'10px'}}>
+    <div style={{display:'flex',flexWrap:'wrap',gap:'10px',marginBottom:'10px',justifyContent:'space-between'}}>
           <FlexContainer/>
           <FlexContainer/>
           <FlexContainer/>

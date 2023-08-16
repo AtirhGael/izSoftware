@@ -191,7 +191,7 @@ export function CArdComponent({onpress}){
       <CardActions style={{display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
         <Button size="small">Share</Button>
         {/* <Button   onPress={onpress} size="small">Learn More</Button> */}
-        <Link to="/blog-post" >Learn More</Link>
+        <Link to="/blog-post" style={{textDecoration:'none'}} >Learn More</Link>
       </CardActions>
     </Card>
   );
